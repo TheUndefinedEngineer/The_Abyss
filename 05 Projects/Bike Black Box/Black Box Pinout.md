@@ -63,3 +63,5 @@
 | TP4056 OUT- | LM2596 IN-  |
 | LM2596 OUT+ | STM32-3.3V  |
 | LM2596 OUT- |  STM32-GND  |
+
+#pinout #pinout 

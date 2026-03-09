@@ -53,4 +53,4 @@ monitor = eDP-1,disable
 
 
 
-#linux #hyprland #display
+#linux #hyprland 

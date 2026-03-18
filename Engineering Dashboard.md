@@ -5,8 +5,8 @@
 ## TO-DO Notes  
 tag: #todo  
   
-## STM32 Knowledge  
-tag: #stm32
+## Microcontroller Knowledge  
+tag: #microcontroller
 
 ## Hardware Docs  
 - [[Black Box Pinout]]

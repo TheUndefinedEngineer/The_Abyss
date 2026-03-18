@@ -40,7 +40,7 @@
 
 | SD Pin | Connects To STM32 |
 | :----: | :---------------: |
-|  VCC'  |       3.3V        |
+|  VCC   |       3.3V        |
 |  GND   |        GND        |
 |  CLK   |        PA5        |
 |  MISO  |        PA6        |
@@ -64,4 +64,3 @@
 | LM2596 OUT+ | STM32-3.3V  |
 | LM2596 OUT- |  STM32-GND  |
 
-#pinout #pinout 

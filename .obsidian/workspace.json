@@ -41,16 +41,40 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03 Operating Systems/Books/The C Programming Language/The C Programming Language.md",
+                "file": "07 Systems/NixOS/Steam On NixOS.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "The C Programming Language"
+              "title": "Steam On NixOS"
+            }
+          },
+          {
+            "id": "7a5dfcc45dbf9d76",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "04 Sensors/NEO-6M.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "NEO-6M"
+            }
+          },
+          {
+            "id": "a16a675a01e9b116",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -82,7 +106,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#tools",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -103,7 +127,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -212,49 +237,53 @@
       "bases:Create new base": false
     }
   },
-  "active": "49ea2b01fa947b6e",
+  "active": "a16a675a01e9b116",
   "lastOpenFiles": [
-    "03 Operating Systems/Books/The C Programming Language/Chapter 1 - A Tutorial Introduction.md",
-    "03 Operating Systems/Books/The C Programming Language/The C Programming Language.md",
     "04 Sensors/MPU6050.md",
-    "05 Projects/Bike Black Box/Black Box Pinout.md",
-    "01 Concepts/CAN Protocol.md",
-    "Templates/stm32-build/build.sh.md",
-    "Templates/stm32-build",
-    "Templates",
-    "01 Concepts/Motor Drivers.md",
-    "Images/Motor Driver Images/Pasted image 20260304223427.png",
-    "Images/Motor Driver Images",
-    "Images/Motor Driver Images/Pasted image 20260305100433.png",
-    "Images/Motor Driver Images/Pasted image 20260305100424.png",
-    "Images/Motor Driver Images/Pasted image 20260305095412.png",
-    "Images/Motor Driver Images/Pasted image 20260305094134.png",
-    "Images/Motor Driver Images/Pasted image 20260305094116.png",
-    "Images/Motor Driver Images/Pasted image 20260305092616.png",
-    "Images/Motor Driver Images/Pasted image 20260305092413.png",
-    "Images/Motor Driver Images/Pasted image 20260305092343.png",
+    "02 Microcontrollers/STM32/Interfacing SD Card With STM32.md",
     "01 Concepts/Git.md",
-    "01 Concepts/Variables.md",
+    "02 Microcontrollers/STM32/STM32 Project Templates.md",
+    "Templates/STM32/STM32-Develop.md",
+    "02 Microcontrollers/STM32/STM32 NixOS Workflow.md",
+    "Templates/STM32/STM32-Build.md",
+    "Templates/fhs-shell/qnxide & qnxsc.md",
+    "Templates/STM32",
+    "Templates/Untitled.md",
+    "Templates/fhs-shell/Untitled.md",
+    "Templates/fhs-shell/qnx-fhs.md",
+    "Templates/fhs-shell/fshell.md",
+    "Templates/fhs-shell",
+    "Templates/stm32-build/build.sh.md",
+    "02 Microcontrollers/STM32",
     "Engineering Dashboard.md",
-    "Images/Motor Driver Images/Pasted image 20260304225517.png",
-    "Images",
-    "07 Systems/NixOS/GNU Radio On NixOS.md",
-    "07 Systems/NixOS",
-    "03 Operating Systems/Books/The C Programming Language",
-    "03 Operating Systems/Books",
-    "Untitled.canvas",
-    "Untitled.base",
-    "2026-03-04.md",
-    "05 Projects/Self Balancing Robot/Self Balancing Robot.md",
-    "05 Projects/Bike Black Box/Bike Black Box.md",
-    "05 Projects/Self Balancing Robot",
-    "02 STM32/STM32 Knowledge.md",
-    "07 Systems/Hyprland/hypr-monitor.md",
-    "02 STM32/00 Setup/STM32 NixOS Workflow.md",
-    "02 STM32/Templates/STM32 Project Templates.md",
-    "02 STM32/Templates/stm32-develop/flake.nix",
-    "07 Systems/Untitled.md",
-    "05 Projects/Untitled.md",
-    "Welcome.md"
+    "05 Projects/Bike Black Box/Black Box Pinout.md",
+    "01 Concepts/UART.md",
+    "01 Concepts/Topologies Of Communication.md",
+    "04 Sensors/NEO-6M.md",
+    "Images/UART/registers.png",
+    "Images/UART/uart pripheras.png",
+    "Images/UART/bit banging.png",
+    "Images/UART/baud rate.png",
+    "Images/UART/rs232 signal.png",
+    "Images/UART/rs232.png",
+    "Images/UART/data frame.png",
+    "Images/Topology/peer to peer.png",
+    "Images/Topology/star.png",
+    "Images/Topology/bus.png",
+    "Images/Topology",
+    "Images/UART",
+    "Images/NEO-6M/Ublox-NEO-6M-GPS-Module-Pinout.png.part",
+    "Images/NEO-6M/NEO-6M-GPS-Module-u.fl-Connector.jpg.part",
+    "Images/NEO-6M/NEO-6M-GPS-Module-Battery-and-EEPROM.jpg.part",
+    "Images/NEO-6M/NEO-6M-GPS-Module-3.3V-Voltage-Regulator.jpg.part",
+    "Images/NEO-6M/NEO-6M-GPS-Module-Position-Fix-LED-Indicator.jpg.part",
+    "01 Concepts/GPS.md",
+    "02 Microcontrollers/STM32/STM32 Knowledge.md",
+    "03 OS & Systems/Hyprland/hypr-monitor.md",
+    "03 OS & Systems/Books/The C Programming Language/The C Programming Language.md",
+    "03 OS & Systems/Books/The C Programming Language/Chapter 1 - A Tutorial Introduction.md",
+    "01 Concepts/SSH - Secure Shell.md",
+    "03 OS & Systems/NixOS/Steam On NixOS.md",
+    "Untitled.canvas"
   ]
 }

@@ -1,5 +1,4 @@
-
-## MPU6050(IMU)
+## MPU6050 (IMU)
 
 | MPU Pin | Connects To STM32  |
 | :-----: | :----------------: |
@@ -48,9 +47,9 @@
 |   CS   |        PA4        |
 ## Ignition Detection
 
-|   Divider Ouput   | Connects To STM32 |
-| :---------------: | :---------------: |
-| Middle of 33k/10k |        PB9        |
+|    Divider Ouput    | Connects To STM32 |
+| :-----------------: | :---------------: |
+| Middle of 360k/100k |        PB9        |
 ## Power Pins
 
 | Input Pins  | Output Pins |

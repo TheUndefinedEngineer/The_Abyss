@@ -1,4 +1,3 @@
-https://www.qnx.com/developers/docs/qnxeverywhere/com.qnx.doc.target_images/topic/qsti/intro.html
 ## Required Hardware:
  - PI 4 or 5 with 8 GB or more RAM
  - Wired/USB Keyboard & Mouse
@@ -27,5 +26,8 @@ chmod +x unpack_rpi5_image.sh
 It will create another `rpi5` folder and that folder has the image: `rpi5.img`.
 
 Using `rpi-imager` flash the image -> [[rpi-imager on NixOS]] 
+
+Sources:
+https://www.qnx.com/developers/docs/qnxeverywhere/com.qnx.doc.target_images/topic/qsti/intro.html
 
 #linux #qnx #nixos 

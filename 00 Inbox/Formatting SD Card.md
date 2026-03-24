@@ -26,3 +26,5 @@ Now the SD card has a **FAT32 boot partition**.
 
 sudo mkdir /mnt/pi  
 sudo mount /dev/sdb1 /mnt/pi
+
+#linux 

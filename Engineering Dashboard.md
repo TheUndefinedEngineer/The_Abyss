@@ -8,9 +8,10 @@ tag: #todo
 ## Microcontroller Knowledge  
 tag: #microcontroller
 
-## Hardware Docs  
-- [[Black Box Pinout]]
-
+## Concepts
+- [[UART]]
+- [[GPS]]
+- 
 ## Development Tools  
 - [[Git]]
 

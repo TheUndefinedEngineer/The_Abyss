@@ -48,7 +48,7 @@ The NEO-6M chip needs between 2.7 and 3.6 volts to operate. Fortunately, the mod
 
 ![[NEO-6M-GPS-Module-3.3V-Voltage-Regulator.jpg]]
 
-The module uses about 45mA of current during normal operation. However, it also has a feature called Power Save Mode (PSM), which lets it turn off parts of the chip when they’re not needed. In PSM, it can use as little as 11mA, making it perfect for battery-powered devices like GPS watches or trackers.
+The module uses about 45 mA of current during normal operation. However, it also has a feature called Power Save Mode (PSM), which lets it turn off parts of the chip when they’re not needed. In PSM, it can use as little as 11 mA, making it perfect for battery-powered devices like GPS watches or trackers.
 
 ### Battery & EEPROM
 

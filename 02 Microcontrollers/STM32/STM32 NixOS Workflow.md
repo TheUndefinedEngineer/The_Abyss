@@ -60,7 +60,7 @@ set(ARM_FLAGS
 # 3. Using Templates
 
 We use 2 different templates which can be copied into the project:
-  1. [[STM32-Develop]] - flake.nix
+  1. [[STM32-Develop - NixOS]] - flake.nix
 ```bash
 cp -r ~/Template/stm32-develop/flake.nix ~/Workspace/< project name >
 ``` 
@@ -201,4 +201,4 @@ Workflow:
 
 [[STM32 Project Templates]]
 
-#microcontroller  #embedded #nixos #todo 
+Tags: #microcontroller #embedded #todo 

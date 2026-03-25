@@ -27,16 +27,74 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "04 Sensors/NEO-6M.md",
+                "file": "01 Concepts/SRAM & PSRAM.md",
                 "mode": "source",
-                "source": false
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
               },
               "icon": "lucide-file",
-              "title": "NEO-6M"
+              "title": "SRAM & PSRAM"
             }
           },
           {
             "id": "19408d505182c752",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01 Concepts/OSPI.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "OSPI"
+            }
+          },
+          {
+            "id": "5416307589667b3f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "02 Microcontrollers/STM32/STM32F401/Section - 2 Memory and Bus Architecture.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Section - 2 Memory and Bus Architecture"
+            }
+          },
+          {
+            "id": "d9fa9295f4ba8824",
             "type": "leaf",
             "state": {
               "type": "graph",
@@ -46,7 +104,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -103,7 +161,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 208.5
+    "width": 200
   },
   "right": {
     "id": "0bd1568cd5380cd9",
@@ -209,43 +267,45 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "19408d505182c752",
+  "active": "d9fa9295f4ba8824",
   "lastOpenFiles": [
-    "01 Concepts/SSH - Secure Shell.md",
-    "Templates/Note tempates/Templater.md",
-    "Untitled.md",
-    "Templates/Note tempates",
-    "Untitled 1.md",
-    "2026-03-24.md",
-    "03 OS & Systems/QNX/QNX-RaspberryPi5-SSH-Guide.md",
     "Notes Details.base",
+    "00 Inbox/Formatting SD Card.md",
+    "Templates/STM32/STM32-Develop - NixOS.md",
+    "02 Microcontrollers/STM32/STM32 NixOS Workflow.md",
+    "03 OS & Systems/NixOS/Steam On NixOS.md",
+    "03 OS & Systems/NixOS/rpi-imager on NixOS.md",
+    "03 OS & Systems/QNX/Quick Start Target Image for Raspberry Pi.md",
+    "Templates/fhs-shell/qnxide & qnxsc - NixOS.md",
+    "03 OS & Systems/NixOS/GNU Radio On NixOS.md",
+    "Templates/fhs-shell/fshell - NixOS.md",
+    "03 OS & Systems/NixOS/OBS on NixOS.md",
+    "Templates/fhs-shell/qnx-fhs.md",
+    "Engineering Dashboard.md",
+    "02 Microcontrollers/STM32/STM32F401/Section - 2 Memory and Bus Architecture.md",
+    "01 Concepts/Flash Memory.md",
+    "01 Concepts/Endianness.md",
+    "01 Concepts/OSPI.md",
+    "SRAM & PSRAM.md",
+    "01 Concepts/SRAM & PSRAM.md",
+    "02 Microcontrollers/STM32/STM32F401/RM0368 Reference Manual.md",
+    "01 Concepts/QSPI.md",
+    "01 Concepts/SPI.md",
+    "01 Concepts/Unconfirmed 380153.crdownload",
+    "01 Concepts/UART.md",
+    "01 Concepts/Unconfirmed 900917.crdownload",
+    "Images/xSPI/QSPI single & double bit.png",
+    "Images/xSPI",
+    "04 Sensors/NEO-6M.md",
+    "01 Concepts/Unconfirmed 70666.crdownload",
+    "Images/STM32-F4/system_arch.png",
+    "Images/STM32-F4",
+    "Templates/Note tempates/Templater.md",
+    "01 Concepts/SSH - Secure Shell.md",
+    "Templates/Note tempates",
     "Untitled 3.base",
     "Untitled 2.base",
     "Untitled 1.base",
-    "03 OS & Systems/Debian/VMWare Installation - Debian.md",
-    "03 OS & Systems/Linux/UTF-8-locale-Linux.md",
-    "02 Microcontrollers/STM32/STM32 Knowledge.md",
-    "02 Microcontrollers/STM32/STM32 Project Templates.md",
-    "03 OS & Systems/General/UTF-8-locale-General.md",
-    "03 OS & Systems/General/Unconfirmed 176417.crdownload",
-    "03 OS & Systems/General",
-    "03 OS & Systems/Linux/UTF-8-locale-Guide.md",
-    "03 OS & Systems/Linux/Unconfirmed 672373.crdownload",
-    "03 OS & Systems/QNX/Quick Start Target Image for Raspberry Pi.md",
-    "03 OS & Systems/QNX/Untitled.md",
-    "03 OS & Systems/Linux/Unconfirmed 852118.crdownload",
-    "03 OS & Systems/Linux",
-    "03 OS & Systems/Debian/Flatpak Installation - Debian.md",
-    "00 Inbox/Formatting SD Card.md",
-    "02 Microcontrollers/STM32/STM32CubeMX USART.md",
-    "02 Microcontrollers/STM32/STM32F401/Section - 2 Memory and Bus Architecture.md",
-    "02 Microcontrollers/STM32/STM32F401/RM0368 Reference Manual.md",
-    "05 Projects/Bike Black Box/Black Box Pinout.md",
-    "Engineering Dashboard.md",
-    "04 Sensors/NEO-6M.md",
-    "03 OS & Systems/NixOS/OBS on NixOS.md",
-    "04 Sensors/MPU6050.md",
-    "02 Microcontrollers/STM32/Interfacing SD Card With STM32.md",
     "Images/UART/registers.png",
     "Images/UART/uart pripheras.png",
     "Images/UART/bit banging.png",
@@ -254,8 +314,6 @@
     "Images/UART/rs232.png",
     "Images/UART/data frame.png",
     "Images/Topology/peer to peer.png",
-    "Images/Topology/star.png",
-    "Images/Topology/bus.png",
     "Untitled.canvas"
   ]
 }

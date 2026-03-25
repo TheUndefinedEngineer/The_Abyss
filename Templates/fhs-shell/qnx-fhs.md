@@ -60,4 +60,4 @@
 
 ```
 
-#nixos #qnx 
+#linux #qnx 

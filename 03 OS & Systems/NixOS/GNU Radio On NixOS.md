@@ -49,4 +49,4 @@ ICON=/nix/store/kw95qqva553fng90ny5bv4dk65df3cxs-gnuradio-wrapped-3.10.12.0/lib/
 
 And it works after a restart!
 
-#nixos #linux 
+Tags: #linux 

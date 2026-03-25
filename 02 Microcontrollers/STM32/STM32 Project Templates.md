@@ -17,7 +17,7 @@ Commands:
 ## flake.nix
 
 Location:
-[[STM32-Develop]]
+[[STM32-Develop - NixOS]]
 
 commands:
 ```bash

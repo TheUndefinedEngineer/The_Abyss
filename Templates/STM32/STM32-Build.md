@@ -74,4 +74,4 @@ esac
 
 ```
 
-#linux 
+Tags: #guide #linux #microcontroller 

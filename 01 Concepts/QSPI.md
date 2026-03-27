@@ -223,3 +223,5 @@ Both chips are accessed in parallel:
 - MCU controller has 3 modes: indirect, status-polling, memory-mapped (XIP)
 - Primary use: **external NOR Flash** on MCUs
 - Stepping stone between SPI and OSPI (8 lines) in the xSPI family
+
+Tags: #concept 

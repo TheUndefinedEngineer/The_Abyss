@@ -5,4 +5,4 @@ Existing event data recorder (EDR) solutions are primarily designed for cars. Th
 
 [[Black Box Pinout]]
 
-#project 
+Tags: #project 

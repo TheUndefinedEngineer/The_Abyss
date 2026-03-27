@@ -28,4 +28,4 @@ Used in:
 - [[Bike Black Box]]  
 - [[Self Balancing Robot]]
 
-#microcontroller  #embedded #linux 
+Tags: #reference #microcontroller  #linux 

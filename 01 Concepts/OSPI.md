@@ -189,3 +189,5 @@ and ML inference.
 - **Memory-mapped mode** makes external flash/PSRAM transparent to software (feels like internal RAM)
 - The go-to interface for connecting **external PSRAM and NOR Flash** to modern MCUs
 - Backward compatible with QSPI and SPI devices
+
+Tags: #concept 

@@ -22,7 +22,6 @@ Pi ──[ Ethernet ]── Laptop ──[ Wi-Fi ]── Internet
 - Ethernet cable connecting Pi directly to laptop
 
 ---
-
 ## Step 1 — Assign a Static IP on the Laptop
 
 Find your Ethernet interface name:
@@ -52,7 +51,6 @@ sudo nmcli connection up "Wired connection 1"
 ```
 
 ---
-
 ## Step 2 — Assign a Static IP on the Pi
 
 > **Do this on the Pi's monitor/keyboard directly.**
@@ -105,7 +103,6 @@ Default credentials:
 | Root password | `root`    |
 
 ---
-
 ## Reboot the Pi
 
 QNX does **not** have the standard `reboot` command. Options:
@@ -117,7 +114,6 @@ QNX does **not** have the standard `reboot` command. Options:
 Or simply **physically unplug and replug the power**.
 
 ---
-
 ## Plug and Play Checklist
 
 After completing this guide, every boot should work as follows:
@@ -128,7 +124,6 @@ After completing this guide, every boot should work as follows:
 - `ssh qnxuser@192.168.2.2` from laptop 
 
 ---
-
 ## Troubleshooting
 
 ### SSH hangs / no response
@@ -153,7 +148,6 @@ This is a self-assigned fallback IP — it means the Pi didn't get a proper IP. 
 You're using a hostname like `qnxpi.local` that isn't resolving. Always use the direct IP `192.168.2.2` instead.
 
 ---
-
 ## Key QNX Differences from Linux
 
 | Linux Command | QNX Equivalent |
@@ -165,7 +159,6 @@ You're using a hostname like `qnxpi.local` that isn't resolving. Always use the 
 | `apt/yum` | Not available (QNX uses its own package system) |
 
 ---
-
 ## Network Interface Reference (Raspberry Pi 5 / QNX)
 
 | Interface | Type | Notes |
@@ -176,7 +169,6 @@ You're using a hostname like `qnxpi.local` that isn't resolving. Always use the 
 | `bcm_p2pdev2` | Wi-Fi P2P | |
 
 ---
-
 ## File Locations Reference
 
 | Purpose | Path |
@@ -192,4 +184,4 @@ You're using a hostname like `qnxpi.local` that isn't resolving. Always use the 
 Sources:
 https://claude.ai/share/5a3ee1bb-c868-4172-a67a-c926b40a87c4
 
-#linux #qnx 
+Tags: #linux #qnx #guide 

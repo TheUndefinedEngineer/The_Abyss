@@ -130,4 +130,4 @@ Wear Levelling
 Sources:
 1. https://www.youtube.com/watch?v=r2KaVfSH884
 
-Tags: #concepts 
+Tags: #concept

@@ -153,4 +153,4 @@ Sources:
 1. https://betterexplained.com/articles/understanding-big-and-little-endian-byte-order/
 2. https://www.youtube.com/watch?v=LxvFb63OOs8
 
-Tags: #concepts 
+Tags: #concept

@@ -97,4 +97,4 @@ The ESP32-S3 advertises **"8MB PSRAM"** — this means:
 
 
 
-#concepts 
+Tags: #concept

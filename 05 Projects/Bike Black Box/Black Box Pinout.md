@@ -63,3 +63,4 @@
 | LM2596 OUT+ | STM32-3.3V  |
 | LM2596 OUT- |  STM32-GND  |
 
+Tags: #reference 

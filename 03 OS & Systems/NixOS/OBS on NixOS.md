@@ -30,4 +30,4 @@ Then of course - `sudo nixos-rebuild switch`
 Source:
 https://wiki.nixos.org/wiki/OBS_Studio
 
-#linux 
+Tags: #linux #guide 

@@ -5,8 +5,6 @@ Used for controlling:
 - Torque
 
 But the GPIO pins of micro-controllers and SBC(s) can't power them directly so motor driver with _Mosfets_ is need to control them. 
-
-
 ## Types
 
 1. Unidirectional
@@ -93,4 +91,4 @@ Sources:
 3. https://search.brave.com/search?q=what+is+fly+back+protection&summary=1&conversation=08ce94a575904ebf99e0dd4218da412e40ab
 
 
-#concepts 
+#concept

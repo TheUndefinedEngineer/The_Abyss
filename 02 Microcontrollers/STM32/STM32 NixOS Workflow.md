@@ -201,4 +201,4 @@ Workflow:
 
 [[STM32 Project Templates]]
 
-Tags: #microcontroller #embedded #todo 
+Tags: #guide #microcontroller  #todo 

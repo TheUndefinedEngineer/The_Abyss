@@ -15,58 +15,20 @@
               "state": {
                 "file": "Engineering Dashboard.md",
                 "mode": "source",
-                "source": false
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
               },
               "icon": "lucide-file",
               "title": "Engineering Dashboard"
-            }
-          },
-          {
-            "id": "7a5dfcc45dbf9d76",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01 Concepts/SRAM & PSRAM.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "SRAM & PSRAM"
-            }
-          },
-          {
-            "id": "19408d505182c752",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01 Concepts/OSPI.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "OSPI"
             }
           },
           {
@@ -75,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02 Microcontrollers/STM32/STM32F401/Section - 2 Memory and Bus Architecture.md",
+                "file": "01 Concepts/Bit Banding.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -90,11 +52,11 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Section - 2 Memory and Bus Architecture"
+              "title": "Bit Banding"
             }
           },
           {
-            "id": "d9fa9295f4ba8824",
+            "id": "a29b9472ea4210bf",
             "type": "leaf",
             "state": {
               "type": "graph",
@@ -102,9 +64,33 @@
               "icon": "lucide-git-fork",
               "title": "Graph view"
             }
+          },
+          {
+            "id": "7a84e606f10b0237",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "03 OS & Systems/QNX/Quick Start Target Image for Raspberry Pi.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Quick Start Target Image for Raspberry Pi"
+            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -136,7 +122,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "neo",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -157,7 +143,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -267,45 +254,46 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "d9fa9295f4ba8824",
+  "active": "a29b9472ea4210bf",
   "lastOpenFiles": [
-    "Notes Details.base",
-    "00 Inbox/Formatting SD Card.md",
+    "04 Sensors/NEO-6M.md",
+    "05 Projects/Bike Black Box/Black Box Pinout.md",
+    "03 OS & Systems/QNX/Quick Start Target Image for Raspberry Pi.md",
+    "03 OS & Systems/QNX/QNX-RaspberryPi5-SSH-Guide.md",
+    "03 OS & Systems/Linux/Formatting SD Card.md",
+    "Engineering Dashboard.md",
     "Templates/STM32/STM32-Develop - NixOS.md",
+    "Templates/STM32/STM32-Build.md",
+    "02 Microcontrollers/STM32/Interfacing SD Card With STM32.md",
+    "02 Microcontrollers/STM32/STM32CubeMX USART.md",
+    "02 Microcontrollers/STM32/STM32 Project Templates.md",
     "02 Microcontrollers/STM32/STM32 NixOS Workflow.md",
+    "03 OS & Systems/Books/The C Programming Language/The C Programming Language.md",
+    "02 Microcontrollers/STM32/STM32F401/RM0368 Reference Manual.md",
+    "03 OS & Systems/Tools/Git.md",
+    "03 OS & Systems/Tools",
+    "02 Microcontrollers/STM32/STM32F401/Section - 2 Memory and Bus Architecture.md",
+    "Templates/Note tempates/Templater.md",
+    "Templates/fhs-shell/qnxide & qnxsc - NixOS.md",
+    "Templates/fhs-shell/qnx-fhs.md",
+    "Templates/fhs-shell/fshell - NixOS.md",
+    "05 Projects/Self Balancing Robot/Self Balancing Robot.md",
+    "05 Projects/Bike Black Box/Bike Black Box.md",
+    "04 Sensors/MPU6050.md",
     "03 OS & Systems/NixOS/Steam On NixOS.md",
     "03 OS & Systems/NixOS/rpi-imager on NixOS.md",
-    "03 OS & Systems/QNX/Quick Start Target Image for Raspberry Pi.md",
-    "Templates/fhs-shell/qnxide & qnxsc - NixOS.md",
-    "03 OS & Systems/NixOS/GNU Radio On NixOS.md",
-    "Templates/fhs-shell/fshell - NixOS.md",
     "03 OS & Systems/NixOS/OBS on NixOS.md",
-    "Templates/fhs-shell/qnx-fhs.md",
-    "Engineering Dashboard.md",
-    "02 Microcontrollers/STM32/STM32F401/Section - 2 Memory and Bus Architecture.md",
-    "01 Concepts/Flash Memory.md",
-    "01 Concepts/Endianness.md",
-    "01 Concepts/OSPI.md",
-    "SRAM & PSRAM.md",
-    "01 Concepts/SRAM & PSRAM.md",
-    "02 Microcontrollers/STM32/STM32F401/RM0368 Reference Manual.md",
-    "01 Concepts/QSPI.md",
-    "01 Concepts/SPI.md",
+    "Notes Details.base",
     "01 Concepts/Unconfirmed 380153.crdownload",
-    "01 Concepts/UART.md",
     "01 Concepts/Unconfirmed 900917.crdownload",
     "Images/xSPI/QSPI single & double bit.png",
     "Images/xSPI",
-    "04 Sensors/NEO-6M.md",
     "01 Concepts/Unconfirmed 70666.crdownload",
     "Images/STM32-F4/system_arch.png",
     "Images/STM32-F4",
-    "Templates/Note tempates/Templater.md",
-    "01 Concepts/SSH - Secure Shell.md",
     "Templates/Note tempates",
     "Untitled 3.base",
     "Untitled 2.base",
-    "Untitled 1.base",
     "Images/UART/registers.png",
     "Images/UART/uart pripheras.png",
     "Images/UART/bit banging.png",

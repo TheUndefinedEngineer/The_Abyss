@@ -3,4 +3,4 @@ https://mischianti.org/how-to-use-sd-card-with-stm32-and-sdfat-library/ - Covers
 
 ![[Pasted image 20260311183242.png]]
 
-#embedded #microcontroller 
+Tags: #guide #microcontroller 

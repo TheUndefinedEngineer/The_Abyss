@@ -1,4 +1,3 @@
-
 ## Section 1.1
 - A `C` program file uses `.c` extension and complied using `gcc`.
 - It generates a `a.out` file.
@@ -6,9 +5,11 @@
 - Has header files at the top of the program.
 - The main function uses other functions be it user defined or library functions to help perform its job.
 - Then there are are variables & escape characters.
+
 ```bash
 nano hello_world.c
 ```
+
 ```c
 #include <stdio.h>
 
@@ -16,12 +17,12 @@ int main(){
 	printf("Hello World!\n);
 }
 ```
+
 ```bash
 gcc hello_world.c
 ./a.out
 ```
 - We can use either `cc` or directly use `gcc` to compile.
-
 ## Section 1.2
 - Variables - store values which can be modified
 - Declared before being used:

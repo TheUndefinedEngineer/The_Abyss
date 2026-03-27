@@ -53,4 +53,4 @@ monitor = eDP-1,disable
 
 
 
-#linux 
+Tags: #linux #guide 

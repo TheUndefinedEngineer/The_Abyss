@@ -29,4 +29,4 @@ Just use the discovery app. It was preinstalled.
 Source:
 https://flatpak.org/setup/Debian
 
-#linux
+Tags: #linux #guide 

@@ -14,4 +14,4 @@ In real-world GPS systems, a fourth satellite is usually included for even bette
 
 Source: https://lastminuteengineers.com/neo6m-gps-arduino-tutorial/
 
-#concepts 
+#concept

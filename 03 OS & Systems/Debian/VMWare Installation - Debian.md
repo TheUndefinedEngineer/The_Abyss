@@ -38,4 +38,4 @@ Sources:
 3. Versions: https://support.broadcom.com/group/ecx/productdownloads?subfamily=VMware%20Workstation%20Pro&freeDownloads=true
 4. ChatGPT: https://chatgpt.com/share/69c14de5-b0c8-8002-940e-b1d57dc29099
 
-#linux 
+Tags: #linux #guide 

@@ -20,4 +20,4 @@
 - ISO 7816 protocol
 
 
-#embedded 
+Tags: #reference #concept #microcontroller 

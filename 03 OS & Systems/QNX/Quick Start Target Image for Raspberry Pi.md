@@ -30,4 +30,4 @@ Using `rpi-imager` flash the image -> [[rpi-imager on NixOS]]
 Sources:
 https://www.qnx.com/developers/docs/qnxeverywhere/com.qnx.doc.target_images/topic/qsti/intro.html
 
-Tags: #linux #qnx 
+Tags: #linux #qnx #guide 

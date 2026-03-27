@@ -24,4 +24,4 @@ flake.nix
 
 ```
 
-Tags: #linux 
+Tags: #guide #linux #microcontroller 

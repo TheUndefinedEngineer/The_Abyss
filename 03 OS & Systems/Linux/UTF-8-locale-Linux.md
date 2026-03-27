@@ -3,7 +3,6 @@
 UTF-8 is the most widely used character encoding, supporting virtually all characters from every language. This guide covers how to set and persist a UTF-8 locale on Linux and Unix systems.
 
 ---
-
 ## Table of Contents
 
 1. [What is a Locale?](#what-is-a-locale)
@@ -17,7 +16,6 @@ UTF-8 is the most widely used character encoding, supporting virtually all chara
 9. [Troubleshooting](#troubleshooting)
 
 ---
-
 ## What is a Locale?
 
 A **locale** defines the language, region, and character encoding used by the operating system and applications. It controls:
@@ -30,7 +28,6 @@ A **locale** defines the language, region, and character encoding used by the op
 A UTF-8 locale typically looks like: `en_US.UTF-8`, `en_GB.UTF-8`, `de_DE.UTF-8`, etc.
 
 ---
-
 ## 1. Check Current Locale
 
 ```bash
@@ -38,7 +35,6 @@ locale
 ```
 
 ---
-
 ## 2. List Available Locales
 
 ```bash
@@ -46,7 +42,6 @@ locale -a | grep -i utf8
 ```
 
 ---
-
 ## 3. Generate a Locale (if not available)
 
 **Debian / Ubuntu:**
@@ -66,7 +61,6 @@ sudo locale-gen
 ```
 
 ---
-
 ## 4. Set the System-Wide Locale
 
 **Debian / Ubuntu:**
@@ -96,7 +90,6 @@ LANG=en_US.UTF-8
 ```
 
 ---
-
 ## 5. Set for Current Session Only
 
 ```bash
@@ -106,7 +99,6 @@ export LANGUAGE=en_US:en
 ```
 
 ---
-
 ## 6. Persist for a User
 
 Add the export lines to your shell profile:
@@ -124,7 +116,6 @@ source ~/.zshrc
 ```
 
 ---
-
 ## Verification
 
 ### Check All Locale Settings
@@ -160,7 +151,6 @@ file -i myfile.txt
 ```
 
 ---
-
 ## Troubleshooting
 
 | Problem | Likely Cause | Fix |
@@ -180,7 +170,6 @@ file -i myfile.txt
 | `LANGUAGE` | Preferred languages (colon-separated fallback list) |
 
 ---
-
 ## Quick Reference
 
 ```bash
@@ -201,4 +190,4 @@ sudo update-locale LANG=en_US.UTF-8 LC_ALL=en_US.UTF-8
 Sources:
 https://claude.ai/share/d8d04f48-6247-4413-83a6-69ee3eb0c4a5
 
-#linux 
+Tags: #linux #guide 

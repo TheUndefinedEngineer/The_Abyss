@@ -96,4 +96,4 @@ Sources:
 https://www.youtube.com/watch?v=JuvWbRhhpdI&t=50s
 https://www.youtube.com/watch?v=QmjKRwgddxw
 
-#concepts #embedded 
+Tags: #concept

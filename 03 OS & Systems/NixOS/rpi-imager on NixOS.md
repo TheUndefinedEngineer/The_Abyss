@@ -12,4 +12,4 @@ sudo nixos-rebuild switch
 
 That's it! It will run normally.
 
-Tags: #linux 
+Tags: #linux #guide 

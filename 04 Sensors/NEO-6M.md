@@ -105,9 +105,10 @@ VCC supplies power to the module. You can connect it directly to the 5V pin on 
 3. **Antenna:** Ensure the GPS antenna is properly connected and has a clear view of the sky for optimal performance.
 
 [[UART]]
+[[GPS]]
 
 Source:
 https://docs.cirkitdesigner.com/component/579238e7-31ac-4c6f-b168-27574dc1cefb/gps-neo-6m
 https://lastminuteengineers.com/neo6m-gps-arduino-tutorial/
 
-#embedded 
+Tags: #concept 

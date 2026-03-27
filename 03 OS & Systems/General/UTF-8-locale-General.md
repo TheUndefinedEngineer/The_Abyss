@@ -5,7 +5,6 @@ UTF-8 is the most widely used character encoding, supporting virtually all chara
 > **Linux / Unix users:** See the companion guide [[UTF-8-locale-Linux]].
 
 ---
-
 ## Table of Contents
 
 1. [macOS](#macos)
@@ -17,7 +16,6 @@ UTF-8 is the most widely used character encoding, supporting virtually all chara
 7. [Quick Reference](#quick-reference)
 
 ---
-
 ## macOS
 
 ### Check Current Locale
@@ -50,7 +48,6 @@ source ~/.zshrc
 > **Note:** macOS defaults to UTF-8 in most cases. Issues typically arise in legacy or third-party terminal applications.
 
 ---
-
 ## Windows
 
 ### Set System Locale (GUI)
@@ -98,7 +95,6 @@ export LC_ALL=en_US.UTF-8
 WSL (Windows Subsystem for Linux) follows the Linux guide.
 
 ---
-
 ## Docker & Containers
 
 ### Dockerfile
@@ -127,7 +123,6 @@ services:
 ```
 
 ---
-
 ## Application-Level Settings
 
 ### Python
@@ -191,7 +186,6 @@ AddDefaultCharset UTF-8
 ```
 
 ---
-
 ## Verification
 
 ### Test UTF-8 Encoding (macOS / Linux terminal)
@@ -217,7 +211,6 @@ REM Should return: Active code page: 65001
 ```
 
 ---
-
 ## Troubleshooting
 
 | Problem | Likely Cause | Fix |
@@ -229,7 +222,6 @@ REM Should return: Active code page: 65001
 | macOS terminal shows `?` boxes | Font missing glyphs | Switch to a Unicode-complete font (e.g., Menlo, SF Mono) |
 
 ---
-
 ## Quick Reference
 
 ```bash
@@ -256,4 +248,4 @@ export JAVA_TOOL_OPTIONS="-Dfile.encoding=UTF-8"
 Sources:
 https://claude.ai/share/d8d04f48-6247-4413-83a6-69ee3eb0c4a5
 
-#general 
+Tags: #guide 

@@ -183,4 +183,4 @@ Standard SPI sends 1 bit per clock on dedicated lines. Extensions add more data 
 Sources:
 https://claude.ai/share/3b53e887-e2bd-4148-8ea5-5c56481ad9ae
 
-#concepts 
+Tags: #concept

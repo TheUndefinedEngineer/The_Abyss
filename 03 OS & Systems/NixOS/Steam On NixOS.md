@@ -14,4 +14,4 @@ After adding this, rebuild your system configuration:
 sudo nixos-rebuild boot
 ```
 
-Tags: #linux 
+Tags: #linux #guide 

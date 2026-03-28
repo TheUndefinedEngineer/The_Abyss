@@ -11,41 +11,20 @@
       "query": "file:Engineering Dashboard",
       "color": {
         "a": 1,
-        "rgb": 1744520
-      }
-    },
-    {
-      "query": "tag:#concept  ",
-      "color": {
-        "a": 1,
-        "rgb": 14725458
-      }
-    },
-    {
-      "query": "tag:#guide  ",
-      "color": {
-        "a": 1,
-        "rgb": 11657298
-      }
-    },
-    {
-      "query": "tag:#microcontroller  ",
-      "color": {
-        "a": 1,
-        "rgb": 2320081
+        "rgb": 8564904
       }
     }
   ],
   "collapse-display": false,
   "showArrow": false,
-  "textFadeMultiplier": 0,
-  "nodeSizeMultiplier": 1,
+  "textFadeMultiplier": -0.4,
+  "nodeSizeMultiplier": 1.10807291666667,
   "lineSizeMultiplier": 2.798828125,
   "collapse-forces": false,
-  "centerStrength": 0.518713248970312,
-  "repelStrength": 10,
-  "linkStrength": 1,
+  "centerStrength": 0.303792317708333,
+  "repelStrength": 9.06575520833333,
+  "linkStrength": 0.948404947916667,
   "linkDistance": 250,
-  "scale": 0.5549293324917595,
+  "scale": 0.543001061840819,
   "close": true
 }

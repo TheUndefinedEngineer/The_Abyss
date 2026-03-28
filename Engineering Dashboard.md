@@ -18,12 +18,15 @@
 - [[SRAM & PSRAM]] #concept
 - [[Endianness]] #concept
 - [[Bit Banding]] #concept
-- [[Section - 2 Memory and Bus Architecture]] #concept
+- [[Section - 2 Memory and Bus Architecture]] #concept #microcontroller 
   - I-Bus, D-Bus, S-Bus
   - DMA Memory Bus, DMA Peripheral Bus
   - BusMatrix, AHB/APB Bridges
   - Memory Organization, Boot Configuration
   - STM32F401 Physical Remap
+- [[Section 3 - Embedded flash memory interface]] #concept #microcontroller 
+	- Introduction, Features
+	- Embedded Flash Memory
 
 ### Communication Protocols
 - [[Topologies Of Communication]] #concept

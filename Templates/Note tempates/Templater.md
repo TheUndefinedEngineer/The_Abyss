@@ -1,4 +1,4 @@
-*<% tp.date.now("YYYY-MM-DD") %>* 
+*<% tp.date.now("DD-MM-YYYY") %>* 
 
 
 Sources:

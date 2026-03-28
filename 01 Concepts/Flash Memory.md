@@ -81,6 +81,8 @@ Based on Architecture
     - Faster random access
     - Used in embedded systems
 
+![[nor vs nand.png]]
+
 Based on Bits per Cell
 - SLC → 1 bit
 - MLC → 2 bits

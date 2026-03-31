@@ -49,6 +49,7 @@
 ## Development Tools
 - [[Git]] #guide
 - [[SSH - Secure Shell]] #guide
+- [[Makefile — Multi-Source Build Guide]] #guide #linux #microcontroller #reference 
 
 ---
 ## Operating Systems
@@ -71,6 +72,8 @@
 - [[Quick Start Target Image for Raspberry Pi]] #guide #qnx
 - [[qnxide & qnxsc - NixOS]] #guide #qnx
 - [[qnx-fhs]] #concept #qnx
+- [[Makefile — QNX Server + Client Build Guide]] #guide #linux #qnx 
+- [[Makefile — QNX Dual-Binary Build Guide]] #guide #linux #qnx 
 
 ---
 ## Books, Datasheets & Reference Manuals

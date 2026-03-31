@@ -13,6 +13,13 @@
         "a": 1,
         "rgb": 8564904
       }
+    },
+    {
+      "query": "tag:#qnx  ",
+      "color": {
+        "a": 1,
+        "rgb": 16718362
+      }
     }
   ],
   "collapse-display": false,
@@ -25,6 +32,6 @@
   "repelStrength": 9.06575520833333,
   "linkStrength": 0.948404947916667,
   "linkDistance": 250,
-  "scale": 0.543001061840819,
+  "scale": 0.5358246444035979,
   "close": true
 }

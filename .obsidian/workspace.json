@@ -66,7 +66,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -98,7 +98,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "qnx",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -229,18 +229,20 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "a29b9472ea4210bf",
+  "active": "7a84e606f10b0237",
   "lastOpenFiles": [
+    "01 Concepts/Unions in C.md",
+    "Engineering Dashboard.md",
+    "03 OS & Systems/Linux/Formatting SD Card.md",
+    "03 OS & Systems/QNX/QNX-RaspberryPi5-SSH-Guide.md",
+    "Templates/Note tempates/Templater.md",
     "02 Microcontrollers/STM32/STM32F401/Section 3 - Embedded flash memory interface.md",
     "03 OS & Systems/QNX/Makefile — QNX Server + Client Build Guide.md",
     "03 OS & Systems/QNX/Makefile — QNX Dual-Binary Build Guide.md",
-    "Engineering Dashboard.md",
-    "03 OS & Systems/QNX/QNX-RaspberryPi5-SSH-Guide.md",
     "Makefile - QNX Dual-Binary Build Guide.md",
     "03 OS & Systems/Linux/Makefile — Multi-Source Build Guide.md",
     "Templates/fhs-shell/qnxide & qnxsc - NixOS.md",
     "02 Microcontrollers/STM32/STM32F401/Section - 2 Memory and Bus Architecture.md",
-    "Templates/Note tempates/Templater.md",
     "Images/STM32-F4/flash interface.png",
     "01 Concepts/Bit Banding.md",
     "03 OS & Systems/QNX/Quick Start Target Image for Raspberry Pi.md",
@@ -250,7 +252,6 @@
     "Images/Flash/nor vs nand.png",
     "04 Sensors/NEO-6M.md",
     "05 Projects/Bike Black Box/Black Box Pinout.md",
-    "03 OS & Systems/Linux/Formatting SD Card.md",
     "Templates/STM32/STM32-Develop - NixOS.md",
     "Templates/STM32/STM32-Build.md",
     "02 Microcontrollers/STM32/Interfacing SD Card With STM32.md",
@@ -259,7 +260,6 @@
     "02 Microcontrollers/STM32/STM32 NixOS Workflow.md",
     "03 OS & Systems/Books/The C Programming Language/The C Programming Language.md",
     "02 Microcontrollers/STM32/STM32F401/RM0368 Reference Manual.md",
-    "03 OS & Systems/Tools/Git.md",
     "03 OS & Systems/Tools",
     "Notes Details.base",
     "01 Concepts/Unconfirmed 380153.crdownload",

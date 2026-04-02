@@ -1,5 +1,6 @@
 ## Active Projects
 - [[Bike Black Box]] #project
+	- [[Black Box Pinout]] #reference 
 - [[Self Balancing Robot]] #project
 
 ---
@@ -39,6 +40,8 @@
 ### General
 - [[Variables]] #concept
 - [[Motor Drivers]] #concept
+- [[Unions in C]] #concept 
+- [[GPS]] #concept 
 
 ---
 ## Sensors
@@ -58,6 +61,7 @@
 - [[VMWare Installation - Debian]] #guide #linux
 - [[UTF-8-locale-General]] #guide #linux
 - [[UTF-8-locale-Linux]] #guide #linux
+- [[Formatting SD Card]] #guide #linux 
 
 ### NixOS
 - [[hypr-monitor]] #guide #linux

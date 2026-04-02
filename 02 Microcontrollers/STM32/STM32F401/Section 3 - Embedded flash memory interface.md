@@ -310,10 +310,148 @@ For frequently accessed literal pools and data constants, the data cache retains
 All three are typically enabled together when configuring the system clock. Set these *along with* LATENCY before switching to PLL.
 
 ---
+*01/04/2026*
+## Erase and program operations
 
+- For any flash memory operation the CPU clock frequency (HCLK) must be at least 1 MHz.
+- The content in flash memory is not guaranteed in case of reset during an operation.
+- Reading flash while its being written or erased will cause the bus to stall.
+- Code/Data fetches can't be performed during write/erase operations.
 
+### Unlocking the Flash control register
 
+The `FLASH_CR` register is **locked by default after every reset** — a deliberate hardware safety measure. The unlock uses a **two-key sequence** written to `FLASH_KEYR`:
 
+|Step|Value|Purpose|
+|---|---|---|
+|Write 1|`0x45670123` (KEY1)|First half of handshake|
+|Write 2|`0xCDEF89AB` (KEY2)|Second half — unlocks CR|
+A few important behavioural details worth internalizing:
+- **Order matters strictly.** Wrong key, wrong order, or any other write to `FLASH_KEYR` in between → bus error + `FLASH_CR` stays locked until next reset. There's no retry.
+- **BSY (busy) gating.** Even after unlocking, you cannot write to `FLASH_CR` while `FLASH_SR.BSY == 1`. The AHB bus _stalls_ — it doesn't fault, it just waits. So you must poll BSY before any CR write.
+- **Re-locking.** Software can voluntarily re-lock by setting `FLASH_CR.LOCK = 1`. Good practice after any flash operation.
+
+The key values themselves (`0x45670123` / `0xCDEF89AB`) are just magic numbers baked into silicon — their only purpose is to make an accidental unlock sequence astronomically unlikely.
+
+---
+### Program/erase parallelism
+
+#### What Is Parallelism?
+The number of bytes written to flash in a single programming operation. Controlled by `FLASH_CR.PSIZE[1:0]`. **Must be set before any program or erase operation** — wrong PSIZE for the supply voltage causes silent data corruption (reads back correct, but value may not be retained long-term).
+
+#### PSIZE Settings
+
+| PSIZE[1:0] | Width  | Voltage Range   | Use Case               |
+|------------|--------|-----------------|------------------------|
+| `00`       | x8     | 1.7 – 2.1 V     | Low-power / battery    |
+| `01`       | x16    | 2.1 – 2.4 V     |                        |
+| `10`       | x32    | 2.4 – 2.7 V     | **Standard (3.3 V)**   |
+| `11`       | x64    | 2.7 – 3.6 V     | Requires external VPP  |
+
+> [!tip] For STM32F4 at 3.3 V, always use **PSIZE = `10` (x32)**.
+
+#### Why Voltage Gates Parallelism?
+- Writing wider = charging more bit cells simultaneously = higher current draw.
+- If VDD sags under load, cells are written at a marginal charge level — they read back correctly but fail retention over time.
+- This is a **silent corruption** with no immediate indication.
+
+#### VPP (External High-Voltage Supply)
+- Enables x64 parallelism independent of VDD
+- 8 – 9 V external supply, must sustain > 10 mA
+- **Factory use only** — must not be applied for more than 1 hour total (risk of permanent flash damage)
+### Erase
+
+- Flash bits can only transition 1 → 0 during programming. 
+- Erase resets all bits back to 1 (`0xFF`). **You must erase before re-writing any flash region.**
+- Erase granularity is sector-level or whole-chip — there is no page or byte-level erase.
+#### Sector Erase
+**Procedure:**
+1. Poll `FLASH_SR.BSY` until clear
+2. Set `FLASH_CR.SER = 1` and write target sector to `FLASH_CR.SNB`
+3. Set `FLASH_CR.STRT = 1` to trigger
+4. Poll `FLASH_SR.BSY` until clear
+
+**Sector count by variant:**
+
+| Part | Main Sectors |
+|------|-------------|
+| STM32F401xB/C | 5 (0–4) |
+| STM32F401xD/E | 7 (0–6) |
+
+> [!warning] Verify the exact part number before using SNB. Writing an out-of-range sector number produces undefined behavior.
+
+#### Mass Erase
+**Procedure:**
+1. Poll `FLASH_SR.BSY` until clear
+2. Set `FLASH_CR.MER = 1`
+3. Set `FLASH_CR.STRT = 1` to trigger
+4. Poll `FLASH_SR.BSY` until clear
+
+**Mass erase does NOT affect:**
+- OTP sector — physically non-erasable by design
+- Configuration sector (option bytes) — separate erase mechanism
+
+#### Bit Combination Rules
+
+| MERx | SER | STRT | Outcome |
+|------|-----|------|---------|
+| 1 | 1 | 1 | Mass erase (MER takes precedence) |
+| 0 | 0 | 1 | **Undefined — no error flag raised** ⚠️ |
+
+> [!danger] Never trigger STRT with both MER and SER cleared. The hardware enters an undefined state silently — no error flag, no reliable BSY behavior. This is a forbidden condition per the reference manual.
+
+> [!note] Erase Time:
+Depends on `FLASH_CR.PSIZE` setting. See device datasheet electrical
+characteristics section for exact figures.
+
+### Programming
+*02/04/2026*
+#### Standard Programming:
+- Check BSY bit.
+- Set the PG bit in FLASH_CR.
+- Perform data write operation - main memory / OTP area.
+	- Byte access in case of x8 parallelism
+	- Half-word access in case of x16 parallelism
+	- Word access in case of x32 parallelism
+	- Double word access in case of x64 parallelism
+- Wait for BSY bit to be cleared.
+> [!note] Note:
+> Successive write is possible without erase when changing bits 1 to 0 but the opposite requires an erase operation. The erase is done first.
+
+#### Programming Errors
+- It is not allowed to program data to the flash memory that would cross the 128-bit row boundary.
+
+| Flag     | Cause                                    |
+| -------- | ---------------------------------------- |
+| `PGAERR` | Write crosses a 128-bit row boundary     |
+| `PGPERR` | Write access width ≠ PSIZE parallelism   |
+| `PGSERR` | Sequence error — PG not set before write |
+| `WRPERR` | Target sector is write-protected         |
+#### Cache Coherency
+
+**During a Write:**
+If the written data is in the **data cache**, the cache is updated automatically alongside the flash write — no manual invalidation needed.
+
+**During an Erase:**
+If erased data was cached in the **instruction or data cache**, those cache lines become stale. You must flush the caches **before** the erased region is executed or read again.
+
+> `ICRST` / `DCRST` can **only be written while I/DCEN = 0** (cache disabled).
+
+#### Interrupt-Driven Programming
+- Generates an interrupt when flash operation finishes or fails.
+- Setting the end of operation interrupt enable bit (EOPIE) in the FLASH_CR register enables interrupt generation.
+- If an error occurs during a program, an erase, or a read operation request, one of the - following error flags is set in the FLASH_SR register:
+	- PGAERR, PGPERR, PGSERR (Program error flags)
+	- WRPERR (Protection error flag)
+> [!important] In this case, if the error interrupt enable bit (ERRIE) is set in the FLASH_CR register, an interrupt is generated and the operation error bit (OPERR) is set in the FLASH_SR register.
+
+| Interrupt event        | Event flag                 | Enable control bit |
+| ---------------------- | -------------------------- | ------------------ |
+| End of operation<br>   | EOP                        | EOPIE              |
+| Write protection error | WRPERR                     | ERRIE              |
+| Programming error      | PGAERR, PGPERR, PGSERR<br> | ERRIE              |
+> [!note] Note:
+> If several successive errors are detected (for example, in case of DMA transfer to the flash memory), the error flags cannot be cleared until the end of the successive write requests.
 
 ---
 ## !

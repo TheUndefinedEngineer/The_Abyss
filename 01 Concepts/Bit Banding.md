@@ -4,12 +4,9 @@
 Bit-banding is a memory-mapping technique in ARM Cortex-M microcontrollers that allows **atomic read-modify-write access to individual bits** using regular 32-bit memory operations.
 
 ---
-
 ## The Problem It Solves
 
 Normally, to set a single bit you do:
-
-c
 
 ```c
 REG |= (1 << 3);  // Step 1: Read → Step 2: Modify → Step 3: Write
@@ -62,7 +59,7 @@ alias_address = alias_base + (byte_offset × 32) + (bit_number × 4)
 |`× 32`|Each byte expands to 32 bytes in the alias (8 bits × 4 bytes)|
 |`× 4`|Each bit gets a 4-byte (32-bit) slot|
 
-### Worked Example
+### Example
 
 **Goal:** Set bit 3 of address `0x20000000`
 

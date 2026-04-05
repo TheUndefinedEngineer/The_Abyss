@@ -98,7 +98,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "qnx",
+                "query": "bit banding",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -119,7 +119,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -231,12 +232,19 @@
   },
   "active": "7a84e606f10b0237",
   "lastOpenFiles": [
-    "01 Concepts/Unions in C.md",
     "Engineering Dashboard.md",
+    "02 Microcontrollers/STM32/STM32F401/Section 3 - Embedded flash memory interface.md",
+    "05 Projects/Medical Infusion Pump/Infusion Pump Pinout.md",
+    "05 Projects/Medical Infusion Pump/Infusion pump - flow.md",
+    "01 Concepts/Bit Banding.md",
+    "Images/rpi/rpi_pinout.png",
+    "05 Projects/Bike Black Box/Black Box Pinout.md",
+    "Images/rpi",
+    "05 Projects/Medical Infusion Pump",
+    "01 Concepts/Unions in C.md",
     "03 OS & Systems/Linux/Formatting SD Card.md",
     "03 OS & Systems/QNX/QNX-RaspberryPi5-SSH-Guide.md",
     "Templates/Note tempates/Templater.md",
-    "02 Microcontrollers/STM32/STM32F401/Section 3 - Embedded flash memory interface.md",
     "03 OS & Systems/QNX/Makefile — QNX Server + Client Build Guide.md",
     "03 OS & Systems/QNX/Makefile — QNX Dual-Binary Build Guide.md",
     "Makefile - QNX Dual-Binary Build Guide.md",
@@ -244,22 +252,18 @@
     "Templates/fhs-shell/qnxide & qnxsc - NixOS.md",
     "02 Microcontrollers/STM32/STM32F401/Section - 2 Memory and Bus Architecture.md",
     "Images/STM32-F4/flash interface.png",
-    "01 Concepts/Bit Banding.md",
     "03 OS & Systems/QNX/Quick Start Target Image for Raspberry Pi.md",
     "02 Microcontrollers/STM32/STM32F401/Untitled.md",
     "01 Concepts/Flash Memory.md",
     "Images/Flash",
     "Images/Flash/nor vs nand.png",
     "04 Sensors/NEO-6M.md",
-    "05 Projects/Bike Black Box/Black Box Pinout.md",
     "Templates/STM32/STM32-Develop - NixOS.md",
     "Templates/STM32/STM32-Build.md",
     "02 Microcontrollers/STM32/Interfacing SD Card With STM32.md",
     "02 Microcontrollers/STM32/STM32CubeMX USART.md",
     "02 Microcontrollers/STM32/STM32 Project Templates.md",
     "02 Microcontrollers/STM32/STM32 NixOS Workflow.md",
-    "03 OS & Systems/Books/The C Programming Language/The C Programming Language.md",
-    "02 Microcontrollers/STM32/STM32F401/RM0368 Reference Manual.md",
     "03 OS & Systems/Tools",
     "Notes Details.base",
     "01 Concepts/Unconfirmed 380153.crdownload",
@@ -269,14 +273,11 @@
     "01 Concepts/Unconfirmed 70666.crdownload",
     "Images/STM32-F4/system_arch.png",
     "Images/STM32-F4",
-    "Templates/Note tempates",
-    "Untitled 3.base",
     "Images/UART/registers.png",
     "Images/UART/uart pripheras.png",
     "Images/UART/bit banging.png",
     "Images/UART/baud rate.png",
     "Images/UART/rs232 signal.png",
-    "Images/UART/rs232.png",
     "Untitled.canvas"
   ]
 }

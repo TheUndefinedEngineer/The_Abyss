@@ -454,6 +454,80 @@ If erased data was cached in the **instruction or data cache**, those cache line
 > If several successive errors are detected (for example, in case of DMA transfer to the flash memory), the error flags cannot be cleared until the end of the successive write requests.
 
 ---
+*03/06/2026*
+## Option Bytes
+- Configured depending on the application.
+- **USER** option byte has the following features:
+	- Select the watchdog event: Hardware or software
+	- Reset event when entering the Stop mode
+	- Reset event when entering the Standby mode
+- 0x1FFFC000 - ROP & user option bytes (RDP & USER):
+
+| Bits      | Description                                                                                                    |
+| --------- | -------------------------------------------------------------------------------------------------------------- |
+| Bits 15:8 | 0xAA: Level 0, no protection<br>0xCC: Level 2, chip protection<br>Others: Level 1, read protection of memories |
+| Bit 7     | nRST_STDBY - 1 for no reset                                                                                    |
+| Bit 6     | nRST_STOP - 1 for no reset                                                                                     |
+| Bit 5     | WDG_SW - 0 for H/W & 1 for S/W                                                                                 |
+| Bit 4     | 0x0 - **_don't touch_**                                                                                        |
+| Bits 3:2  | BOR_LEV: BOR reset Level(0-3) - burnout threshold                                                              |
+| Bits 1:0  | 0x01 - not used                                                                                                |
+> [!important] Meanings:
+> - WDG: WatchDog
+> - BOR: Brown-Out Reset
+> - SPRMOD: Sector Protection Mode
+> - nWRP/nWRPi: Not Write protection/per sector i
+> - PCROP: Proprietary Code Read-Out Protection
+
+- 0x1FFFC008 - Write protection nWRP bits for memory sectors:
+
+| Bits      | Description                           |
+| --------- | ------------------------------------- |
+| Bit 15    | SPRMOD - Selection of Protection Mode |
+| Bits 14:6 | Reserved                              |
+| Bits 5:0  | nWRPI                                 |
+
+| SPRMOD | nWRPi = 0       | nWRPi = 1              |
+| ------ | --------------- | ---------------------- |
+| 0      | Write protected | No protection          |
+| 1      | No proctection  | Read protected (PCROP) |
+### BOR_LEV
+- It monitors VDD (supply voltage)
+- If voltage drops below a threshold → MCU is forced into reset
+- This prevents:
+	- Flash corruption.
+	- CPU executing garbage instructions.
+	- Peripheral misbehaviour.
+- Voltage & BOR characteristics should be referred from the data sheet.
+
+| Value | Level       | Meaning                             | Approx Voltage       |
+| ----- | ----------- | ----------------------------------- | -------------------- |
+| 00    | BOR Level 3 | Highest threshold (most protective) | ~2.7V                |
+| 01    | BOR Level 2 | Medium                              | ~2.4V                |
+| 10    | BOR Level 1 | Lower                               | ~2.1V                |
+| 11    | BOR OFF     | Disable BOR                         | Only POR/PDR (~1.7V) |
+> [!important] How it works:
+> Comparator inside MCU checks the voltage and if VDD < VBOR threshold → Reset signal is asserted and MCU stays in reset until voltage rises again.
+
+
+*04/04/2026*
+### Programming user option bytes
+- To run an operation on the sector, a option lock bit(OPTLOCK) in FLASH_OPTCR must be cleared.
+- To clear the bit 2 steps are required:
+	- Write OPTKEY1 = 0x0819 2A3B in the Flash option key register (FLASH_OPTKEYR)
+	- Write OPTKEY2 = 0x4C5D 6E7F in the Flash option key register (FLASH_OPTKEYR)
+- The user option bytes are protected by OTPLOCK using software.
+
+#### Modifying user option bytes
+1. Check that no flash memory operation is ongoing by checking the BSY bit in the FLASH_SR register
+2. Write the desired option value in the FLASH_OPTCR register.
+3. Set the option start bit (OPTSTRT) in the FLASH_OPTCR register
+4. Wait for the BSY bit to be cleared.
+> [!Note]
+> The value of an option is automatically modified by first erasing the user configuration sector and then programming all the option bytes with the values contained in the FLASH_OPTCR register.
+
+
+---
 ## !
 Sources:
 1. RM0368 Rev 6 — Section 3: Embedded Flash Memory Interface

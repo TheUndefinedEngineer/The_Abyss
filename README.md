@@ -2,6 +2,9 @@
 - [[Bike Black Box]] #project
 	- [[Black Box Pinout]] #reference 
 - [[Self Balancing Robot]] #project
+- [[Medical Infusion Pump]] #project 
+	- [[Infusion pump - flow]]
+	- [[Infusion Pump Pinout]]
 
 ---
 ## STM32
@@ -28,6 +31,8 @@
 - [[Section 3 - Embedded flash memory interface]] #concept #microcontroller 
 	- Introduction, Features
 	- Embedded Flash Memory
+- [[Section 5 - Power Controller]] #reference #microcontroller 
+- [[Section 6 - Reset & Clock Control (RCC)]] 
 
 ### Communication Protocols
 - [[Topologies Of Communication]] #concept

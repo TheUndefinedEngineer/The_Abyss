@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "The Abyss.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "The Abyss"
+              "title": "README"
             }
           },
           {
@@ -225,8 +225,7 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "bases:Create new base": false,
-      "templater-obsidian:Templater": false
+      "bases:Create new base": false
     }
   },
   "active": "17354d073d428964",
@@ -234,7 +233,7 @@
     "00 Inbox/Writing Code.md",
     "00 Inbox/Shell Basics.md",
     "02 Microcontrollers/STM32/STM32F401/Section 3 - Embedded flash memory interface.md",
-    "The Abyss.md",
+    "README.md",
     "05 Projects/Medical Infusion Pump/Infusion Pump Pinout.md",
     "05 Projects/Medical Infusion Pump/Infusion pump - flow.md",
     "01 Concepts/Bit Banding.md",

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Engineering Dashboard.md",
+                "file": "The Abyss.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Engineering Dashboard"
+              "title": "The Abyss"
             }
           },
           {
@@ -65,8 +65,7 @@
               "title": "Section 3 - Embedded flash memory interface"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +97,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "bit banding",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -230,10 +229,12 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "7a84e606f10b0237",
+  "active": "17354d073d428964",
   "lastOpenFiles": [
-    "Engineering Dashboard.md",
+    "00 Inbox/Writing Code.md",
+    "00 Inbox/Shell Basics.md",
     "02 Microcontrollers/STM32/STM32F401/Section 3 - Embedded flash memory interface.md",
+    "The Abyss.md",
     "05 Projects/Medical Infusion Pump/Infusion Pump Pinout.md",
     "05 Projects/Medical Infusion Pump/Infusion pump - flow.md",
     "01 Concepts/Bit Banding.md",
@@ -262,8 +263,6 @@
     "Templates/STM32/STM32-Build.md",
     "02 Microcontrollers/STM32/Interfacing SD Card With STM32.md",
     "02 Microcontrollers/STM32/STM32CubeMX USART.md",
-    "02 Microcontrollers/STM32/STM32 Project Templates.md",
-    "02 Microcontrollers/STM32/STM32 NixOS Workflow.md",
     "03 OS & Systems/Tools",
     "Notes Details.base",
     "01 Concepts/Unconfirmed 380153.crdownload",

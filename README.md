@@ -17,7 +17,7 @@
 
 ---
 ## Concepts
-### Memory & Bus Architecture
+### Micro-controller 
 - [[Flash Memory]] #concept
 - [[SRAM & PSRAM]] #concept
 - [[Endianness]] #concept
@@ -32,8 +32,12 @@
 	- Introduction, Features
 	- Embedded Flash Memory
 - [[Section 5 - Power Controller]] #reference #microcontroller 
-- [[Section 6 - Reset & Clock Control (RCC)]] 
-
+	- 
+- [[Section 6 - Reset & Clock Control (RCC)]] #concept #microcontroller 
+	- Types of reset - system, backup domain, power
+	- Clocks
+- [[PLL — Phase Lock Loop]] #concept #microcontroller 
+- [[VCO - Voltage Controlled Oscillator]] #concept #microcontroller 
 ### Communication Protocols
 - [[Topologies Of Communication]] #concept
 - [[UART]] #concept
@@ -41,7 +45,6 @@
 - [[SPI]] #concept
 - [[OSPI]] #concept
 - [[QSPI]] #concept
-
 ### General
 - [[Variables]] #concept
 - [[Motor Drivers]] #concept

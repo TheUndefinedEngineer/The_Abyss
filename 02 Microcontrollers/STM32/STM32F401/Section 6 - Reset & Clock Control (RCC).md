@@ -54,11 +54,29 @@ There are 2 types:
 > The bit DBP of the register PWR_CR must be set to 1 in order to generate the backup domain reset.
 
 ---
+*08/04/2026*
 ## 6.2 Clocks
+There are 3 different *primary* clocks which can be used to drive the system (SYSCLK):
+- HSI oscillator clk
+- HSE oscillator clk
+- Main PLL(PLL) clk - [[PLL — Phase Lock Loop]]
+There are 2 different *secondary* clocks which can be used to drive low speed peripherals:
+- 32 kHz low-speed internal RC (LSI RC)
+- 32.768 kHz low-speed external crystal (LSE crystal)
+> [!important] Key Insight
+> Each clock source can be switched on or off independently when it is not used, to optimize power consumption.
+
+**LSI RC:** Drives the independent watchdog and optionally the RTC used for Auto-wakeup from Stop/Standby mode.
+
+**LSE Crystal:** Optionally drives the RTC clk (RTCCLK).
+
+
+
+
 
 ---
 ## !
 Sources:
 
-Tags:
+Tags: #concept #microcontroller 
 

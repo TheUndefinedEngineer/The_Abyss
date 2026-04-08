@@ -47,7 +47,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Section 6 - Reset & Clock Control (RCC).md",
+                "file": "02 Microcontrollers/STM32/STM32F401/Section 6 - Reset & Clock Control (RCC).md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -64,9 +64,57 @@
               "icon": "lucide-file",
               "title": "Section 6 - Reset & Clock Control (RCC)"
             }
+          },
+          {
+            "id": "6824b5e88a181371",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01 Concepts/PLL — Phase Lock Loop.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "PLL — Phase Lock Loop"
+            }
+          },
+          {
+            "id": "4569ecad159dcafd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "README"
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -229,17 +277,28 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "7a84e606f10b0237",
+  "active": "6824b5e88a181371",
   "lastOpenFiles": [
-    "Section 5 - Power Controller.md",
     "README.md",
-    "Section 6 - Reset & Clock Control (RCC).md",
+    "01 Concepts/PLL — Phase Lock Loop.md",
+    "02 Microcontrollers/STM32/STM32F401/Section 6 - Reset & Clock Control (RCC).md",
+    "01 Concepts/VCO - Voltage Controlled Oscillator.md",
+    "Images/PLL/divide_frequency.png",
+    "Untitled.md",
+    "Images/PLL",
+    "Images/PLL/multiply_frequency_2.png",
+    "Images/PLL/lock_range.png",
+    "Images/PLL/capture_range.png",
+    "Images/PLL/block_diagram.png",
+    "Notes Details.base",
+    "Pasted image 20260408215621.png",
+    "Images/PLL/multiply_frequency_1.png",
+    "02 Microcontrollers/STM32/STM32F401/Section 5 - Power Controller.md",
     "05 Projects/Bike Black Box/Bike Black Box.md",
     "05 Projects/Medical Infusion Pump/Infusion pump - flow.md",
     "05 Projects/Medical Infusion Pump/Infusion Pump Pinout.md",
     "05 Projects/Medical Infusion Pump/Medical Infusion Pump.md",
     "02 Microcontrollers/STM32/STM32F401/Section 3 - Embedded flash memory interface.md",
-    "Untitled.md",
     "00 Inbox/Writing Code.md",
     "00 Inbox/Shell Basics.md",
     "01 Concepts/Bit Banding.md",
@@ -258,25 +317,13 @@
     "Templates/fhs-shell/qnxide & qnxsc - NixOS.md",
     "02 Microcontrollers/STM32/STM32F401/Section - 2 Memory and Bus Architecture.md",
     "Images/STM32-F4/flash interface.png",
-    "03 OS & Systems/QNX/Quick Start Target Image for Raspberry Pi.md",
-    "02 Microcontrollers/STM32/STM32F401/Untitled.md",
-    "01 Concepts/Flash Memory.md",
     "Images/Flash",
     "Images/Flash/nor vs nand.png",
     "03 OS & Systems/Tools",
-    "Notes Details.base",
     "01 Concepts/Unconfirmed 380153.crdownload",
     "01 Concepts/Unconfirmed 900917.crdownload",
-    "Images/xSPI/QSPI single & double bit.png",
     "Images/xSPI",
     "01 Concepts/Unconfirmed 70666.crdownload",
-    "Images/STM32-F4/system_arch.png",
-    "Images/STM32-F4",
-    "Images/UART/registers.png",
-    "Images/UART/uart pripheras.png",
-    "Images/UART/bit banging.png",
-    "Images/UART/baud rate.png",
-    "Images/UART/rs232 signal.png",
     "Untitled.canvas"
   ]
 }

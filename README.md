@@ -32,7 +32,6 @@
 	- Introduction, Features
 	- Embedded Flash Memory
 - [[Section 5 - Power Controller]] #reference #microcontroller 
-	- 
 - [[Section 6 - Reset & Clock Control (RCC)]] #concept #microcontroller 
 	- Types of reset - system, backup domain, power
 	- Clocks

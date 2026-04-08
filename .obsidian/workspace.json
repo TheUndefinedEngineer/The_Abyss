@@ -114,7 +114,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -277,10 +277,10 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "6824b5e88a181371",
+  "active": "4569ecad159dcafd",
   "lastOpenFiles": [
-    "README.md",
     "01 Concepts/PLL — Phase Lock Loop.md",
+    "README.md",
     "02 Microcontrollers/STM32/STM32F401/Section 6 - Reset & Clock Control (RCC).md",
     "01 Concepts/VCO - Voltage Controlled Oscillator.md",
     "Images/PLL/divide_frequency.png",

@@ -66,55 +66,19 @@
             }
           },
           {
-            "id": "6824b5e88a181371",
+            "id": "86a1d1906589e69a",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "01 Concepts/PLL — Phase Lock Loop.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
+                "file": "06 Images/Motor Driver Images/Pasted image 20260305092343.png"
               },
-              "icon": "lucide-file",
-              "title": "PLL — Phase Lock Loop"
-            }
-          },
-          {
-            "id": "4569ecad159dcafd",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "README.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "README"
+              "icon": "lucide-image",
+              "title": "Pasted image 20260305092343"
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -277,22 +241,32 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "4569ecad159dcafd",
+  "active": "86a1d1906589e69a",
   "lastOpenFiles": [
-    "01 Concepts/PLL — Phase Lock Loop.md",
-    "README.md",
-    "02 Microcontrollers/STM32/STM32F401/Section 6 - Reset & Clock Control (RCC).md",
+    "06 Images/Motor Driver Images/Pasted image 20260304223427.png",
     "01 Concepts/VCO - Voltage Controlled Oscillator.md",
-    "Images/PLL/divide_frequency.png",
-    "Untitled.md",
-    "Images/PLL",
-    "Images/PLL/multiply_frequency_2.png",
-    "Images/PLL/lock_range.png",
-    "Images/PLL/capture_range.png",
-    "Images/PLL/block_diagram.png",
+    "01 Concepts/Schmitt Trigger.md",
+    "01 Concepts/Varactor Diode.md",
+    "02 Microcontrollers/STM32/STM32F401/Section 6 - Reset & Clock Control (RCC).md",
+    "06 Images/varactor diode/equivalent circuit high freq.png",
+    "06 Images/varactor diode/equivalent circuit.png",
+    "06 Images/varactor diode/hyper abrupt.png",
     "Notes Details.base",
-    "Pasted image 20260408215621.png",
-    "Images/PLL/multiply_frequency_1.png",
+    "06 Images/varactor diode/working varactor.png",
+    "06 Images/varactor diode/varactor symbol.png",
+    "06 Images/varactor diode/varactor diode.png",
+    "06 Images/VCO/vco block diagram.png",
+    "Images/Untitled",
+    "06 Images/VCO/types_example vco.png",
+    "06 Images/VCO/freq vs control voltage.png",
+    "06 Images/VCO",
+    "06 Images/varactor diode/abrupt diode.png",
+    "README.md",
+    "Untitled.base",
+    "06 Images/varactor diode",
+    "06 Images/Schmitt Trigger",
+    "01 Concepts/PLL — Phase Lock Loop.md",
+    "06 Images/PLL",
     "02 Microcontrollers/STM32/STM32F401/Section 5 - Power Controller.md",
     "05 Projects/Bike Black Box/Bike Black Box.md",
     "05 Projects/Medical Infusion Pump/Infusion pump - flow.md",
@@ -302,28 +276,19 @@
     "00 Inbox/Writing Code.md",
     "00 Inbox/Shell Basics.md",
     "01 Concepts/Bit Banding.md",
-    "Images/rpi/rpi_pinout.png",
     "05 Projects/Bike Black Box/Black Box Pinout.md",
-    "Images/rpi",
+    "06 Images/rpi",
     "05 Projects/Medical Infusion Pump",
     "01 Concepts/Unions in C.md",
     "03 OS & Systems/Linux/Formatting SD Card.md",
     "03 OS & Systems/QNX/QNX-RaspberryPi5-SSH-Guide.md",
-    "Templates/Note tempates/Templater.md",
+    "07 Templates/Note tempates/Templater.md",
     "03 OS & Systems/QNX/Makefile — QNX Server + Client Build Guide.md",
     "03 OS & Systems/QNX/Makefile — QNX Dual-Binary Build Guide.md",
     "Makefile - QNX Dual-Binary Build Guide.md",
     "03 OS & Systems/Linux/Makefile — Multi-Source Build Guide.md",
-    "Templates/fhs-shell/qnxide & qnxsc - NixOS.md",
-    "02 Microcontrollers/STM32/STM32F401/Section - 2 Memory and Bus Architecture.md",
-    "Images/STM32-F4/flash interface.png",
-    "Images/Flash",
-    "Images/Flash/nor vs nand.png",
-    "03 OS & Systems/Tools",
-    "01 Concepts/Unconfirmed 380153.crdownload",
-    "01 Concepts/Unconfirmed 900917.crdownload",
-    "Images/xSPI",
-    "01 Concepts/Unconfirmed 70666.crdownload",
+    "07 Templates/fhs-shell/qnxide & qnxsc - NixOS.md",
+    "06 Images/Flash",
     "Untitled.canvas"
   ]
 }

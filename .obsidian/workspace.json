@@ -66,15 +66,27 @@
             }
           },
           {
-            "id": "86a1d1906589e69a",
+            "id": "22823372e8d534e2",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "06 Images/Motor Driver Images/Pasted image 20260305092343.png"
+                "file": "01 Concepts/PLL — Phase Lock Loop.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
               },
-              "icon": "lucide-image",
-              "title": "Pasted image 20260305092343"
+              "icon": "lucide-file",
+              "title": "PLL — Phase Lock Loop"
             }
           }
         ],
@@ -241,13 +253,15 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "86a1d1906589e69a",
+  "active": "5054e4a73aa67ac5",
   "lastOpenFiles": [
-    "06 Images/Motor Driver Images/Pasted image 20260304223427.png",
+    "02 Microcontrollers/STM32/STM32F401/Section 6 - Reset & Clock Control (RCC).md",
+    "06 Images/STM32-F4/HSE-LSE clock sources.png",
     "01 Concepts/VCO - Voltage Controlled Oscillator.md",
+    "06 Images/Motor Driver Images/Pasted image 20260304223427.png",
+    "06 Images/Motor Driver Images/Pasted image 20260305092343.png",
     "01 Concepts/Schmitt Trigger.md",
     "01 Concepts/Varactor Diode.md",
-    "02 Microcontrollers/STM32/STM32F401/Section 6 - Reset & Clock Control (RCC).md",
     "06 Images/varactor diode/equivalent circuit high freq.png",
     "06 Images/varactor diode/equivalent circuit.png",
     "06 Images/varactor diode/hyper abrupt.png",
@@ -257,10 +271,7 @@
     "06 Images/varactor diode/varactor diode.png",
     "06 Images/VCO/vco block diagram.png",
     "Images/Untitled",
-    "06 Images/VCO/types_example vco.png",
-    "06 Images/VCO/freq vs control voltage.png",
     "06 Images/VCO",
-    "06 Images/varactor diode/abrupt diode.png",
     "README.md",
     "Untitled.base",
     "06 Images/varactor diode",

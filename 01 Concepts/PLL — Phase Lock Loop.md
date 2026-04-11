@@ -19,6 +19,15 @@ It is a general-purpose building block found across virtually all digital and RF
 
 When locked: `f_out = f_in`
 
+**The loop logic:**
+
+If VCO drifts too fast → feedback signal gets ahead of reference → phase detector catches it → filter smooths it → VCO gets nudged back down
+
+This is what "locked" means — feedback divided output **exactly matches** reference frequency and phase. PLLRDY flag sets when this happens.
+
+> [!important] Key Insight
+> The PLL tricks the VCO into running fast by making it **think** it's running slow through the feedback divider. The only way the divided output can match the slow reference is if the VCO is running N times faster.
+
 **VCO -> Voltage Controlled Oscillator** [[VCO - Voltage Controlled Oscillator]]
 
 ---
@@ -77,6 +86,13 @@ Capture range is always **a subset** of lock range.
 | RF transceivers        | PLLs used as frequency synthesizers                                                                                      |
 
 On higher-level systems (Pi, desktop), the OS/bootloader configures PLLs transparently. On MCUs, they are configured explicitly via registers.
+
+---
+> [!question] **Why not just use a high frequency crystal directly?**
+> - High frequency crystals (>30MHz) are **harder to manufacture accurately**, more expensive, more sensitive to PCB layout
+> - They consume more power
+> - Low frequency crystals are **more stable, cheaper, widely available** (like standard 8MHz or 25MHz)
+> - The PLL gives **flexibility** — same 8MHz crystal can give 48MHz for USB, 84MHz for core, different frequencies for peripherals, all from one source
 
 ---
 ## !

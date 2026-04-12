@@ -141,6 +141,65 @@ The high speed external clock signal can be generated using:
 	- At startup the clk is not released until the bit is set by hardware.
 	- An interrupt can be generated if enabled in RCC_CIR.
 - It can be switched on and off using the **HSEON** bit in the RCC_CR.
+---
+*12/04/2026*
+### 6.2.2 HSI Clock
+Its generated from an internal **16 MHz** RC oscillator and can be used directly as a system clock or PLL input.
+- Provides low cost clock source.
+- Faster startup than external crystal oscillator/ceramic resonator.
+- HSI - High Speed Internal
+#### Calibration
+- Factory calibrated by ST for 1% accuracy at T<sub>A</sub> = 25$\degree$C.
+- After reset, the factory calibration is loaded in the **HSICAL[7:0]** bits in the RCC_CR.
+- Voltage and temperature variations affect the RC oscillator speed.
+- HSI freq. can be trimmed in the application using the **HSITRIM[4:0]** bits in the RCC_CR.
+- The **HSIRDY** flag in RCC_CR indicates if the HSI RC is stable or not.
+- At startup, the HSI RC output clock is not released until **HSIRDY** bit is set by hardware.
+- HSI RC can be switched on and off using the **HSION** bit in the RCC_CR.
+- The HSI signal can also be used as a backup source (Auxiliary clock) if the HSE crystal oscillator fails.
+---
+### 6.2.3 PLL Configuration
+There are 2 PLLs featured in STM32F401xx:
+- A main PLL clk by HSE or HSI and features 2 different output clocks.
+	- The first output generates the high speed system clock up to 84 MHz.
+	- The second output generates the clk for USB OTF FS 48MHz, the random analog generator and SDIO <= 48 MHz.
+- A dedicated PLL (PLLI2S) for accurate clk for high-quality audio performance on the I2S interface.
+
+Main-PLL parameters can't be configured once PLL is enabled. It is recommended to configure it before enabling it bu selecting HSI or HSE as the PLL clk source and configure the division factors **'M','P','Q'** and multiplication factor **'N'**.
+
+The PLLI2S uses the same input clk as the main PLL and **PLLM[5:0]** and **PLLSRC** bits are common to both. But PLLI2S has dedicated enable/disable and division factor configuration bits. Similar to main PLL can't be configured after enabling it.
+
+The 2 PLLs are disabled by hardware when entering Stop and Standby modes or when a HSE failure occurs when HSE or PLL are used by system clk. 
+
+RCC_PLLCFGR and RCC_CFGR are used to configure PLL and PLLI2S.
+
+---
+### 6.2.4 LSE Clock
+It is generated using a 32.768 kHz low speed external crystal or ceramic resonator. 
+- It has the advantage to provide a low-power but highly accurate clk source to the real-time clk peripheral (RTC) for clk/calendar or any other timing functions. 
+- The LSE oscillator is switched on and off using the **LESON** bit int eh RCC_BDCR.
+- The **LSERDY** flag in the RCC_BDCR is used to indicate if the LSE crystal is stable or not.
+- At startup, the LSE crystal output clk signal is not released until the **LSERDY** bit is set by the hardware.
+- An interrupt can be generated if enabled in the RCC_CIR.
+#### External Source (LSE bypass)
+- An external clk source must be provided.
+- It must have freq. up to 1 MHz.
+- This mode is selected by setting the **LSEBYP** and **LSEONE** bits in the RCC_BDCR.
+- The external clk signal with ~50% duty cycle to drive the OSC32_IN pin while OSC32_OUT pin should be left HI-Z.
+---
+
+
+
+
+
+
+
+
+- It acts as an low-power clk source that can be kept running in Stop and Standby mode for independent watchdog(IWDG) and Auto-wakeup unit(AWU).
+- The clk freq. is around 32 kHz
+- It can be turned on and off using the **LSION** bit in the RCC_CSR.
+- The **LSIRDY** flag in RCC_CSR indicates if the low-speed internal oscillator is stable or not.
+
 
 
 ---

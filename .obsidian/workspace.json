@@ -90,7 +90,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -253,8 +253,9 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "5054e4a73aa67ac5",
+  "active": "7a84e606f10b0237",
   "lastOpenFiles": [
+    "01 Concepts/PLL — Phase Lock Loop.md",
     "02 Microcontrollers/STM32/STM32F401/Section 6 - Reset & Clock Control (RCC).md",
     "06 Images/STM32-F4/HSE-LSE clock sources.png",
     "01 Concepts/VCO - Voltage Controlled Oscillator.md",
@@ -276,7 +277,6 @@
     "Untitled.base",
     "06 Images/varactor diode",
     "06 Images/Schmitt Trigger",
-    "01 Concepts/PLL — Phase Lock Loop.md",
     "06 Images/PLL",
     "02 Microcontrollers/STM32/STM32F401/Section 5 - Power Controller.md",
     "05 Projects/Bike Black Box/Bike Black Box.md",

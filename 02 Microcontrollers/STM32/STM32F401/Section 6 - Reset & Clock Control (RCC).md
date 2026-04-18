@@ -187,18 +187,102 @@ It is generated using a 32.768 kHz low speed external crystal or ceramic resonat
 - This mode is selected by setting the **LSEBYP** and **LSEONE** bits in the RCC_BDCR.
 - The external clk signal with ~50% duty cycle to drive the OSC32_IN pin while OSC32_OUT pin should be left HI-Z.
 ---
-
-
-
-
-
-
-
-
-- It acts as an low-power clk source that can be kept running in Stop and Standby mode for independent watchdog(IWDG) and Auto-wakeup unit(AWU).
-- The clk freq. is around 32 kHz
+*18/04/2026*
+### 6.2.5 LSI Clock
+It acts as a low powered clock source that can be kept running in Stop and Standby mode for:
+- Independent watchdog (IWDG)
+- Auto-wakeup unit (AWU)
+The clock freq. is around 32kHz.
 - It can be turned on and off using the **LSION** bit in the RCC_CSR.
 - The **LSIRDY** flag in RCC_CSR indicates if the low-speed internal oscillator is stable or not.
+- At startup the clk is not released until **LSION** bit is set by hardware.
+- An interrupt can also be generated if enabled in the RCC_CIR.
+---
+### 6.2.6 System Clock (SYSCLK) selection
+- After a system reset, the HSI oscillator is selected as the system clock.
+- When a clock source is used directly or through PLL as the system clock, it is not possible to stop it.
+- A switch from one clock source to another occurs only if the target clock source is ready.
+- If a clock source that is not yet ready is selected, the switch occurs when the clock source is ready.
+- Status bits in the RCC_CR indicate which clock(s) is (are) ready and which clock is currently used as the system clock.
+---
+### 6.2.7 Clock Security System (CSS)
+It can be activated by software. The clock detector is enabled after the HSE oscillator startup delay, and disabled when the oscillator stops.
+
+If a failure is detected on the HSE clock, this oscillator is automatically disabled, a clock failure event is sent to the break inputs of advanced-control timer TIM1, and an interrupt is
+generated to inform the software about the failure (clock security system interrupt CSSI), allowing the MCU to perform rescue operations. The CSSI is linked to the Cortex®-M4 with
+FPU NMI (non-maskable interrupt) exception vector.
+
+> [!note]
+> When the CSS is enabled, if the HSE clock happens to fail, the CSS generates an interrupt, which causes the automatic generation of an NMI. The NMI is executed indefinitely unless the CSS interrupt pending bit is cleared. As a consequence, the application has to clear the CSS interrupt in the NMI ISR by setting the CSSC bit in the RCC_CIR.
+
+If the HSE oscillator is used directly or indirectly as the system clock (indirectly meaning that it is directly used as PLL input clock, and that PLL clock is the system clock) and a failure is detected, then the system clock switches to the HSI oscillator and the HSE oscillator is disabled.
+
+If the HSE oscillator clock was the clock source of PLL used as the system clock when the failure occurred, PLL is also disabled. In this case, if the PLLI2S was enabled, it is also disabled when the HSE fails.
+
+---
+### 6.2.8 RTC/AWU Clock
+Once RTCCLK clk source is selected, the only way to modify the selection is to reset the power domain.
+
+The RTCCLK clk source can be either:
+- HSE 1MHz (divided by a programmable prescaler)
+- LSE
+- LSI
+It is selected by programming the **RTCSEL[1:0]** bits in RCC_BDCR and the **RTCPRE[4:0]** bits in RCC_CFGR (clock configuration register).
+
+If LSE is selected as the clk source:
+- The RTC will work normally if he backup or the system supply disappears.
+If LSI is selected as the AWU clk:
+- The AWU state is not guaranteed if the system supply disappears.
+> [!question] What is AWU?
+> Auto-wakeup unit, a low-power feature in STM microcontrollers that acts like an internal alarm clock, allowing the CPU to wake up from **Active Halt** mode after a predefined time interval without external interrupts.
+
+If HSE oscillator divided by a value between 2 and 31 is used as the RTC clk:
+- The RTC state is not guaranteed if the backup or the system supply disappears.
+
+The LSE clock is in the Backup domain, whereas the HSE and LSI clocks are not. As a consequence:
+
+If LSE is selected as the RTC clock:
+- The RTC continues to work even if the VDD supply is switched off, provided the VBAT supply is maintained.
+If LSI is selected as the Auto-wakeup unit (AWU) clock:
+- The AWU state is not guaranteed if the VDD supply is powered off.
+If the HSE clock is used as the RTC clock:
+- The RTC state is not guaranteed if the VDD supply is powered off or if the internal voltage regulator is powered off (removing power from the 1.2 V domain).
+
+> [!note]
+> To read the RTC calendar register when the APB1 clock frequency is less than seven times the RTC clock frequency (f<sub>APB1</sub> < 7xf<sub>RTCLCK</sub>), the software must read the calendar time and date registers twice. The data are correct if the second read access to RTC_TR gives the same result than the first one. Otherwise a third read access must be performed.
+
+> [!important] Good to know!
+> RTC calendar registers `RTC_TR` for time, `RTC_DR` for date.
+
+---
+### 6.2.9 Watchdog Clock
+If the independent watchdog (IWDG) is started by either hardware option or software access, the LSI oscillator is forced ON and cannot be disabled. After the LSI oscillator temporization, the clock is provided to the IWDG.
+
+---
+### 6.2.10 Clock-out Capability
+Two microcontroller clock output (MCO) pins are available:
+- MCO1
+	You can output four different clock sources onto the MCO1 pin **(PA8)** using the configurable prescaler (from 1 to 5):
+	- HSI clock
+	- LSE clock
+	- HSE clock
+	- PLL clock
+	The desired clock source is selected using the **MCO1PRE[2:0]** and **MCO1[1:0]** bits in the RCC_CFGR.
+- MCO 2
+	You can output four different clock sources onto the MCO2 pin (PC9) using the configurable prescaler (from 1 to 5):
+	- HSE clock
+	- PLL clock
+	- System clock (SYSCLK)
+	- PLLI2S clock
+	The desired clock source is selected using the **MCO2PRE[2:0]** and **MCO2** bits in the RCC_CFGR.
+> [!important] The selected clock to output onto MCO must not exceed 100 MHz (the maximum I/O speed).
+
+---
+*19/04/2026*
+### 6.2.11 Internal/External Clock measurement using TIM5/TIM11
+
+
+
 
 
 

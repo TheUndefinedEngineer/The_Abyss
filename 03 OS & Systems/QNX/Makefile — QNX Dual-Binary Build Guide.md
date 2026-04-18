@@ -47,6 +47,12 @@ OUTPUT_DIR  = build/$(CONFIG_NAME)
 SERVER = $(OUTPUT_DIR)/server
 CLIENT = $(OUTPUT_DIR)/client
 
+SERVER_SRC = src/server.c
+CLIENT_SRC = src/client.c
+
+SERVER_OBJ = $(OUTPUT_DIR)/src/server.o
+CLIENT_OBJ = $(OUTPUT_DIR)/src/client.o
+
 # Compiler definitions
 CC  = qcc -Vgcc_nto$(PLATFORM)
 CXX = q++ -Vgcc_nto$(PLATFORM)_cxx

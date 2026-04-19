@@ -1,6 +1,6 @@
 {
   "command_timeout": 5,
-  "templates_folder": "Templates/Note tempates",
+  "templates_folder": "07 Templates/Note tempates",
   "templates_pairs": [
     [
       "",
@@ -15,8 +15,8 @@
   "enable_folder_templates": true,
   "folder_templates": [
     {
-      "folder": "Templates/Note tempates",
-      "template": "Templates/Note tempates/Templater.md"
+      "folder": "07 Templates/Note tempates",
+      "template": "07 Templates/Note tempates/Templater.md"
     }
   ],
   "enable_file_templates": false,

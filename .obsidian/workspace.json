@@ -47,7 +47,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02 Microcontrollers/STM32/STM32F401/Section 6 - Reset & Clock Control (RCC).md",
+                "file": "05 Projects/Self Balancing Robot/SBR - Initial Setup.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -62,7 +62,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Section 6 - Reset & Clock Control (RCC)"
+              "title": "SBR - Initial Setup"
             }
           },
           {
@@ -253,16 +253,22 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "7a84e606f10b0237",
+  "active": "5054e4a73aa67ac5",
   "lastOpenFiles": [
-    "05 Projects/Medical Infusion Pump/Infusion Pump Pinout.md",
-    "05 Projects/Bike Black Box/Black Box Pinout.md",
+    "05 Projects/Self Balancing Robot/Self Balancing Robot.md",
+    "05 Projects/Self Balancing Robot/SBR - Initial Setup.md",
+    "02 Microcontrollers/STM32/STM32F401/Section - 8 GPIO.md",
+    "02 Microcontrollers/STM32/STM32F401/Section 6 - Reset & Clock Control (RCC).md",
+    "06 Images/STM32-F4/TIM11 input capture.png",
+    "06 Images/STM32-F4/TIM5 input capture.png",
+    "README.md",
     "03 OS & Systems/QNX/Makefile — QNX Server + Client Build Guide.md",
     "03 OS & Systems/QNX/Makefile — QNX Dual-Binary Build Guide.md",
+    "05 Projects/Medical Infusion Pump/Infusion Pump Pinout.md",
+    "05 Projects/Bike Black Box/Black Box Pinout.md",
     "03 OS & Systems/QNX/QNX-RaspberryPi5-SSH-Guide.md",
     "03 OS & Systems/QNX/Quick Start Target Image for Raspberry Pi.md",
     "01 Concepts/PLL — Phase Lock Loop.md",
-    "02 Microcontrollers/STM32/STM32F401/Section 6 - Reset & Clock Control (RCC).md",
     "06 Images/STM32-F4/HSE-LSE clock sources.png",
     "01 Concepts/VCO - Voltage Controlled Oscillator.md",
     "06 Images/Motor Driver Images/Pasted image 20260304223427.png",
@@ -275,11 +281,8 @@
     "Notes Details.base",
     "06 Images/varactor diode/working varactor.png",
     "06 Images/varactor diode/varactor symbol.png",
-    "06 Images/varactor diode/varactor diode.png",
-    "06 Images/VCO/vco block diagram.png",
     "Images/Untitled",
     "06 Images/VCO",
-    "README.md",
     "Untitled.base",
     "06 Images/varactor diode",
     "06 Images/Schmitt Trigger",
@@ -297,9 +300,6 @@
     "01 Concepts/Unions in C.md",
     "03 OS & Systems/Linux/Formatting SD Card.md",
     "07 Templates/Note tempates/Templater.md",
-    "Makefile - QNX Dual-Binary Build Guide.md",
-    "03 OS & Systems/Linux/Makefile — Multi-Source Build Guide.md",
-    "07 Templates/fhs-shell/qnxide & qnxsc - NixOS.md",
     "06 Images/Flash",
     "Untitled.canvas"
   ]

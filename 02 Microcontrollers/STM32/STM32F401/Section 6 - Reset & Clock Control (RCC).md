@@ -281,14 +281,47 @@ Two microcontroller clock output (MCO) pins are available:
 *19/04/2026*
 ### 6.2.11 Internal/External Clock measurement using TIM5/TIM11
 
+Capture of  all on-board clock source generators is possible indirectly using **input capture** of TIM5 channel4 and TIM11 channel1.
 
+### TIM5 Channel4
+It has an input multiplexer which allows choosing whether the input capture is triggered by the I/O or by an internal clock.
+- Selected through **TI4_RMP[1:0]** bits in the **TIM5_OR** register.
 
+The primary purpose of having the LSE connected to the channel4 input capture is to be able to precisely measure the HSI.
+- The number of HSI clock counts between consecutive edges of the LSE signal gives the measurement of the internal clock period.
+- The high-resolution of LSE helps to determine the internal clock freq. and trim the source to compensate for manufacturing-process and/or temperature and  voltage related freq. deviations.
+	- For this purpose HSI has dedicated, user-accessible calibration bits.
+
+Its also possible to measure the LSI freq.
+- It is useful for applications that don't have a crystal.
+-  The ultralow-power LSI oscillator has a large manufacturing process deviation: by measuring it versus the HSI clock source, it is possible to determine its frequency with the precision of the HSI.
+- The measured value can be used to have more accurate RTC time base timeouts (when LSI is used as the RTC clock source) and/or an IWDG timeout with an acceptable accuracy.
+
+Use the following procedure to measure the LSI frequency:
+1. Enable the TIM5 timer and configure channel4 in Input capture mode.
+2. Set the TI4_RMP bits in the TIM5_OR register to 0x01 to connect the LSI clock internally to TIM5 channel4 input capture for calibration purposes.
+3. Measure the LSI clock frequency using the TIM5 capture/compare 4 event or interrupt.
+4. Use the measured LSI frequency to update the prescaler of the RTC depending on the desired time base and/or to compute the IWDG timeout.
+![[TIM5 input capture.png]]
+
+---
+### TIM11 Channel1
+It has an input multiplexer which allows choosing whether the input capture is triggered by the I/O or by an internal clock.
+- Selected through **TI1_RMP[1:0]** bits in the **TIM11_OR** register.
+
+The HSE_RTC is connected to channel 1 input capture to have rough indication of the external crystal freq.
+- It requires that the HSI system clk source.
+	- It is useful for instance to ensure compliance with the  IEC 60730/IEC 61335 standards which require to be able to determine harmonic or subharmonic frequencies (–50/+100% deviations).
+![[TIM11 input capture.png]]
+
+---
 
 
 
 ---
 ## !
 Sources:
+1. RM0368 reference manual - rev6
 
 Tags: #concept #microcontroller 
 

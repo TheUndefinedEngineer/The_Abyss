@@ -90,11 +90,11 @@ The embedded linear regulator supplies the 1.2 V digital core domain.
 
 Three low-power modes are available:
 
-|Mode|CPU|Clocks|Regulator|SRAM/Regs|Wake-up|
-|---|---|---|---|---|---|
-|**Sleep**|Stopped|Peripherals running|ON|Retained|Any NVIC interrupt|
-|**Stop**|Stopped|All 1.2V clocks OFF, HSI/HSE OFF|MR or LPR|Retained|EXTI lines|
-|**Standby**|Stopped|All clocks OFF|OFF|**Lost**|WKUP pin, RTC, NRST, IWDG|
+| Mode        | CPU     | Clocks                           | Regulator | SRAM/Regs | Wake-up                   |
+| ----------- | ------- | -------------------------------- | --------- | --------- | ------------------------- |
+| **Sleep**   | Stopped | Peripherals running              | ON        | Retained  | Any NVIC interrupt        |
+| **Stop**    | Stopped | All 1.2V clocks OFF, HSI/HSE OFF | MR or LPR | Retained  | EXTI lines                |
+| **Standby** | Stopped | All clocks OFF                   | OFF       | **Lost**  | WKUP pin, RTC, NRST, IWDG |
 
 Entry is via `WFI` / `WFE` instructions (or return from ISR with SLEEPONEXIT=1).
 

@@ -9,6 +9,12 @@ Tools I am installing:
 sudo apt install neovim gcc-arm-none-eabi openocd gdb-multiarch
 ```
 
+> [!question] What's the difference between `arm-none-eabi-gcc` and `gcc-arm-none-eabi`?
+> - **`arm-none-eabi-gcc`** → the _actual compiler binary_
+> - **`gcc-arm-none-eabi`** → the _package name_ that installs the toolchain
+> Refer official documentation linked in sources.
+
+
 Before writing any peripheral code, I need to write:
 1. **Startup file (startup.c)** - ARM assembly that runs before `main()`. It sets up the stack pointer, copies `.data` from flash to RAM, zeros `.bss`, then calls `main`. Without this, the C program has no valid memory layout and undefined behaviour starts immediately
 2. **Linker script (`stm32f401.ld`)** — tells the linker where flash and RAM are, how big they are, and how to arrange your sections (`.text`, `.data`, `.bss`). Without this, the linker has no idea it's targeting an STM32.
@@ -16,5 +22,6 @@ Before writing any peripheral code, I need to write:
 ---
 ## !
 Sources:
+1. [https://gcc.gnu.org/onlinedocs/gcc/ARM-Options.html](https://gcc.gnu.org/onlinedocs/)
 
 Tags:

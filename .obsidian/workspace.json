@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "05 Projects/Bike Black Box/Black Box Pinout.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "Black Box Pinout"
             }
           },
           {
@@ -47,7 +47,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "05 Projects/Self Balancing Robot/SBR - Initial Setup.md",
+                "file": "MCU Startup File from Scratch.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -62,7 +62,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "SBR - Initial Setup"
+              "title": "MCU Startup File from Scratch"
             }
           },
           {
@@ -71,7 +71,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "05 Projects/Medical Infusion Pump/Infusion Pump Pinout.md",
+                "file": "A Guide on Makefiles.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -86,11 +86,34 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Infusion Pump Pinout"
+              "title": "A Guide on Makefiles"
+            }
+          },
+          {
+            "id": "d37374b638f88c9c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Neovim.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Neovim"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -253,21 +276,28 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "5054e4a73aa67ac5",
+  "active": "17354d073d428964",
   "lastOpenFiles": [
-    "05 Projects/Self Balancing Robot/Self Balancing Robot.md",
+    "02 Microcontrollers/STM32/STM32F401/Section 5 - Power Controller.md",
+    "05 Projects/Bike Black Box/Black Box Pinout.md",
+    "README.md",
+    "05 Projects/Medical Infusion Pump/Infusion Pump Pinout.md",
+    "MCU Startup File from Scratch.md",
+    "vector table placement.png",
     "05 Projects/Self Balancing Robot/SBR - Initial Setup.md",
+    "A Guide on Makefiles.md",
+    "Neovim.md",
+    "07 Templates/Note tempates/Templater.md",
+    "03 OS & Systems/QNX/QNX-RaspberryPi5-SSH-Guide.md",
+    "makefile-example.png",
+    "03 OS & Systems/QNX/Quick Start Target Image for Raspberry Pi.md",
+    "05 Projects/Self Balancing Robot/Self Balancing Robot.md",
     "02 Microcontrollers/STM32/STM32F401/Section - 8 GPIO.md",
     "02 Microcontrollers/STM32/STM32F401/Section 6 - Reset & Clock Control (RCC).md",
     "06 Images/STM32-F4/TIM11 input capture.png",
     "06 Images/STM32-F4/TIM5 input capture.png",
-    "README.md",
     "03 OS & Systems/QNX/Makefile — QNX Server + Client Build Guide.md",
     "03 OS & Systems/QNX/Makefile — QNX Dual-Binary Build Guide.md",
-    "05 Projects/Medical Infusion Pump/Infusion Pump Pinout.md",
-    "05 Projects/Bike Black Box/Black Box Pinout.md",
-    "03 OS & Systems/QNX/QNX-RaspberryPi5-SSH-Guide.md",
-    "03 OS & Systems/QNX/Quick Start Target Image for Raspberry Pi.md",
     "01 Concepts/PLL — Phase Lock Loop.md",
     "06 Images/STM32-F4/HSE-LSE clock sources.png",
     "01 Concepts/VCO - Voltage Controlled Oscillator.md",
@@ -279,27 +309,19 @@
     "06 Images/varactor diode/equivalent circuit.png",
     "06 Images/varactor diode/hyper abrupt.png",
     "Notes Details.base",
-    "06 Images/varactor diode/working varactor.png",
-    "06 Images/varactor diode/varactor symbol.png",
     "Images/Untitled",
     "06 Images/VCO",
     "Untitled.base",
     "06 Images/varactor diode",
     "06 Images/Schmitt Trigger",
     "06 Images/PLL",
-    "02 Microcontrollers/STM32/STM32F401/Section 5 - Power Controller.md",
     "05 Projects/Bike Black Box/Bike Black Box.md",
     "05 Projects/Medical Infusion Pump/Infusion pump - flow.md",
     "05 Projects/Medical Infusion Pump/Medical Infusion Pump.md",
     "02 Microcontrollers/STM32/STM32F401/Section 3 - Embedded flash memory interface.md",
     "00 Inbox/Writing Code.md",
-    "00 Inbox/Shell Basics.md",
-    "01 Concepts/Bit Banding.md",
     "06 Images/rpi",
     "05 Projects/Medical Infusion Pump",
-    "01 Concepts/Unions in C.md",
-    "03 OS & Systems/Linux/Formatting SD Card.md",
-    "07 Templates/Note tempates/Templater.md",
     "06 Images/Flash",
     "Untitled.canvas"
   ]

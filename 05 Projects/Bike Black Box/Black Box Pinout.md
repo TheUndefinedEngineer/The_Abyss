@@ -7,7 +7,7 @@
 |   SDA   |        PB7         |
 |   SCL   |        PB6         |
 |   INT   |   PA0(Optional)    |
-|   AD0   | 3.3V(Address 0x69) |
+
 ## NEO-6M GPS
 
 | GPS Pin | Connects To STM32 |
@@ -17,16 +17,9 @@
 |   TX    |        PA3        |
 |   RX    |        PA2        |
 |   PPS   |     Optional      |
-## DS3231 RTC Module
 
-| RTC  Pin | Connects To STM32 |
-| :------: | :---------------: |
-|   VCC    |       3.3V        |
-|   GND    |        GND        |
-|   SDA    |        PB7        |
-|   SCL    |        PB6        |
-|   SQW    |     Optional      |
-|   32K    |   Not required    |
+
+
 ## SSD1306 OLED
 
 | OLED Pin | Connects To STM32 |
@@ -62,5 +55,17 @@
 | TP4056 OUT- | LM2596 IN-  |
 | LM2596 OUT+ | STM32-3.3V  |
 | LM2596 OUT- |  STM32-GND  |
+## DS3231 RTC Module
+
+| RTC  Pin | Connects To STM32 |
+| :------: | :---------------: |
+|   VCC    |       3.3V        |
+|   GND    |        GND        |
+|   SDA    |        PB7        |
+|   SCL    |        PB6        |
+|   SQW    |     Optional      |
+|   32K    |   Not required    |
+
+
 
 Tags: #reference 

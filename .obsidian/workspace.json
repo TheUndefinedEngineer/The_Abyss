@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "05 Projects/Bike Black Box/Black Box Pinout.md",
+                "file": "03 OS & Systems/QNX/Quick Start Target Image for Raspberry Pi.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Black Box Pinout"
+              "title": "Quick Start Target Image for Raspberry Pi"
             }
           },
           {
@@ -71,7 +71,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "A Guide on Makefiles.md",
+                "file": "05 Projects/Self Balancing Robot/SBR - Initial Setup.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -86,11 +86,35 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "A Guide on Makefiles"
+              "title": "SBR - Initial Setup"
             }
           },
           {
             "id": "d37374b638f88c9c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "SBR - Makefile.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "SBR - Makefile"
+            }
+          },
+          {
+            "id": "28d2e8ac8bcddb80",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -112,8 +136,33 @@
               "icon": "lucide-file",
               "title": "Neovim"
             }
+          },
+          {
+            "id": "a303cab8471ec86e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "MCU Linker Scripts.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "MCU Linker Scripts"
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -145,7 +194,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "sram starting",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -170,7 +219,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 444.5
   },
   "right": {
     "id": "0bd1568cd5380cd9",
@@ -276,21 +325,25 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "17354d073d428964",
+  "active": "7a84e606f10b0237",
   "lastOpenFiles": [
-    "02 Microcontrollers/STM32/STM32F401/Section 5 - Power Controller.md",
+    "05 Projects/Self Balancing Robot/SBR - Initial Setup.md",
+    "SBR - Makefile.md",
+    "MCU Linker Scripts.md",
+    "MCU Startup File from Scratch.md",
+    "linker-startup.png",
+    "Neovim.md",
+    "03 OS & Systems/QNX/Quick Start Target Image for Raspberry Pi.md",
+    "03 OS & Systems/QNX/QNX-RaspberryPi5-SSH-Guide.md",
     "05 Projects/Bike Black Box/Black Box Pinout.md",
+    "05 Projects/Self Balancing Robot/Untitled.md",
+    "A Guide on Makefiles.md",
+    "02 Microcontrollers/STM32/STM32F401/Section 5 - Power Controller.md",
     "README.md",
     "05 Projects/Medical Infusion Pump/Infusion Pump Pinout.md",
-    "MCU Startup File from Scratch.md",
     "vector table placement.png",
-    "05 Projects/Self Balancing Robot/SBR - Initial Setup.md",
-    "A Guide on Makefiles.md",
-    "Neovim.md",
     "07 Templates/Note tempates/Templater.md",
-    "03 OS & Systems/QNX/QNX-RaspberryPi5-SSH-Guide.md",
     "makefile-example.png",
-    "03 OS & Systems/QNX/Quick Start Target Image for Raspberry Pi.md",
     "05 Projects/Self Balancing Robot/Self Balancing Robot.md",
     "02 Microcontrollers/STM32/STM32F401/Section - 8 GPIO.md",
     "02 Microcontrollers/STM32/STM32F401/Section 6 - Reset & Clock Control (RCC).md",
@@ -307,7 +360,6 @@
     "01 Concepts/Varactor Diode.md",
     "06 Images/varactor diode/equivalent circuit high freq.png",
     "06 Images/varactor diode/equivalent circuit.png",
-    "06 Images/varactor diode/hyper abrupt.png",
     "Notes Details.base",
     "Images/Untitled",
     "06 Images/VCO",
@@ -317,9 +369,6 @@
     "06 Images/PLL",
     "05 Projects/Bike Black Box/Bike Black Box.md",
     "05 Projects/Medical Infusion Pump/Infusion pump - flow.md",
-    "05 Projects/Medical Infusion Pump/Medical Infusion Pump.md",
-    "02 Microcontrollers/STM32/STM32F401/Section 3 - Embedded flash memory interface.md",
-    "00 Inbox/Writing Code.md",
     "06 Images/rpi",
     "05 Projects/Medical Infusion Pump",
     "06 Images/Flash",

@@ -17,7 +17,7 @@ A startup file is a piece of code written in assembly or C language that execute
 ```bash
 touch startup.c
 ```
-### Creating a Vector Table
+### 1. Creating a Vector Table
 - Create an array to hold MSP and handlers addresses.
 - ```c
   uint32_t vectors[] = {store MSP and addresses of various handlers here};
@@ -49,6 +49,65 @@ void Reset_handler(void){
 }
 ```
 
+Writing handlers for all the 97 exceptions will be tedious and not required. A single default handler for all the exceptions can be created and allows us to implement required handlers as per application requirements.
+
+For this `gcc` function attributes - weak and alias are used:
+- **Weak**: Lets us override the already defined weak function(dummy) with same function name.
+- **Alias**: Lets us give alias name to a function.
+```c
+void Reset_Handler(void);
+
+//making it (weak, alias()) allows us to override the funciton with same function name in main application. There we can implement real implementation of handling the exception.
+
+void NMI_Handler(void) __attribute__((weak, alias("Default_Handler"))); // setting alias Default_Handler to the NMI_Handler.
+
+void HardFault_Handler(void) __attribute__((weak, alias("Default_Handler"))); // setting alias Default_Handler to the HardFault_Handler.
+
+uint32_t vectors[] __attribute__ ((section("<section_name>"))) = {
+	STACK_START,
+	(uint32_t)&Reset_Handler,
+	(uint32_t)&NMI_Handler,
+	(uint32_t)&HardFault_Handler,
+	.
+	.
+	.
+	0, //For reserved we should use 0, check the formal to calculate the number of 0's need depending on the address range.
+	(uint32_t)&WWDG_IRQHandler, // IRQ is used for peripheral interrupts.
+	// ',' should be present even for the last handler.
+}; 
+
+void Default_Handler(void){
+	while(1);
+}
+
+void Reset_Handler(void){
+
+}
+```
+
+> [!warning] The reserved space should be respected and 0 should be used to denote it in the vector table.
+
+> [!important] Reserved: 0xXX – 0xYY -> No.of 0's = ((YY - XX) + 1) / 4 | ((ending addr. - starting addr.) + 1) / 4
+
+> [!question] What's the difference b/w _Handler and _IRQHandler?
+> - **`_Handler`**  
+> 	- Used for **Cortex-M core exceptions**  
+> 	- Examples: `Reset_Handler`, `HardFault_Handler`
+> - **`_IRQHandler`**  
+> 	- Used for **peripheral interrupts (NVIC)**  
+> 	- Examples: `EXTI0_IRQHandler`, `USART2_IRQHandler`
+
+- **System Exceptions (Core)**
+	- Defined by ARM (Cortex-M4)
+	- Fixed positions
+	- Negative IRQ numbers
+
+- **External Interrupts (Peripherals)**
+	- Defined by STM32 (NVIC)
+	- Start after system exceptions
+	- IRQn ≥ 0
+
+![[linker-startup.png]]
 
 ---
 ## !

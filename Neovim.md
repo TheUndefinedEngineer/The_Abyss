@@ -38,6 +38,9 @@ Movement Keys :
 - j - move down
 - k - move up
 - l - move right
+- w - move right by word
+- b - move left by word
+- shift + a - moves cursor to end of line and enters insert mode
 
 Commands:
 - :q - quit
@@ -45,6 +48,11 @@ Commands:
 - dd - delete
 - u - undo
 - yy - copy line (yanks)
+- p - paste below the line of the cursor
+- P - paste above the line of the cursor
+- r - replace a character on the cursor
+- ctrl + r - redo
+- 
 
 ---
 ## !

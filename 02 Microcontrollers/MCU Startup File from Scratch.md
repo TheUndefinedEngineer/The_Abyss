@@ -109,6 +109,48 @@ void Reset_Handler(void){
 
 ![[linker-startup.png]]
 
+## Inspecting the Object File
+
+After compiling, inspect the sections generated:
+
+```bash
+arm-none-eabi-objdump -h stm32f401_startup.o
+```
+
+### Command Breakdown
+
+| Part | Meaning |
+|---|---|
+| `arm` | Target architecture is ARM |
+| `none` | No operating system (bare metal) |
+| `eabi` | Embedded Application Binary Interface |
+| `objdump` | Tool that dumps info about object files |
+| `-h` | Show section headers only |
+| `stm32f401_startup.o` | The compiled object file to inspect |
+
+### Other Useful Flags
+| Flag | What it shows |
+|---|---|
+| `-h` | Section headers |
+| `-d` | Disassembly of code |
+| `-s` | Full contents of all sections |
+| `-t` | Symbol table |
+
+### What to Expect in the Output
+
+| Section           | Destination        | Purpose                        |
+| ----------------- | ------------------ | ------------------------------ |
+| `.text`           | FLASH              | Your code/functions            |
+| `.data`           | FLASH→SRAM         | Initialized global variables   |
+| `.bss`            | SRAM               | Uninitialized global variables |
+| `.isr_vector`     | FLASH (0x08000000) | Vector table                   |
+| `.comment`        | Discarded          | Compiler metadata              |
+| `.ARM.attributes` | Discarded          | ARM arch info                  |
+
+> [!note] Note:
+> All VMAs and LMAs will show `0x00000000` at this stage — this is normal! Real addresses are only assigned after the linker script runs.
+
+
 ---
 ## !
 Sources:

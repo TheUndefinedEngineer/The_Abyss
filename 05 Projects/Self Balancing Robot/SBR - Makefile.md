@@ -10,7 +10,10 @@ CFLAGS = -mcpu=$(MACH) -mthumb -std=gnu11 -Wall -O0 -c
 all: stm32f401_startup.o
 
 stm32f401_startup.o:stm32f401_startup.c
-	$(CC) $(CFLAGS) $^ -o $@
+	$(CC) -c $(CFLAGS) $^ -o $@
+	
+main.o:main.c
+	$(CC) -c $(CFLAGS) $^ -o $@
 	
 clean:
 	rm -rf *.o *.elf
@@ -44,10 +47,16 @@ Special variables:
 7. clean:
 		rm -rf *.o *.elf -> when `make clean` is use object files `.o` and binary files `.elf` gets deleted.
 
+```c
+$(CC)     -c     $(CFLAGS)     $^          -o     $@
+  |        |         |          |            |      |
+use this  compile  with these  these files  name   this
+compiler  only     flags       as input     it     filename
+```
 
 ---
 ## !
 Sources:
 1. 
 
-Tags:
+Tags: #reference #project #microcontroller 

@@ -128,6 +128,63 @@ or
 - A symbol is name given for an address.
 > [!important] Location counter always tracks VMA of the section in which it is being used.
 
+## ALIGN
+
+The syntax `ALIGN(n)` rounds the current location counter **up** to the next multiple of `n`.
+
+```ld
+. = ALIGN(4);
+```
+
+The formula it computes: 
+`new_address = (current_address + (n - 1)) & ~(n - 1)`
+
+### What rounding looks like
+
+| Current `.` | After `ALIGN(4)` | Bytes padded |
+|-------------|------------------|--------------|
+| `0x08000000` | `0x08000000` | 0 — already aligned |
+| `0x08000001` | `0x08000004` | 3 |
+| `0x08000002` | `0x08000004` | 2 |
+| `0x08000003` | `0x08000004` | 3 |
+
+> The bottom **2 bits** of any 4-byte aligned address are always `00`. `ALIGN(4)` zeroes them by rounding up.
+
+> [!question] Why the Cortex-M4 needs it?
+> The STM32F401 is a **32-bit CPU** — its data bus moves 4 bytes at a time. Three consequences:
+> 1. **Peripheral registers** — every register in RM0368 is 32-bit and must be accessed at a word-aligned address. A misaligned access to a peripheral causes a HardFault.
+> 2. **Flash programming** — RM0368 §3.5.4: writing data that crosses a 128-bit row boundary sets the `PGAERR` flag in `FLASH_SR` and aborts the write.
+> 3. **Startup word-copy** — the loop that copies `.data` from FLASH → SRAM does 32-bit writes. If `_sdata` or `_edata` is not 4-byte aligned, the copy reads/writes wrong bytes → silent data corruption or HardFault.
+
+#### The critical link: ALIGN(4) → startup code
+The symbols `_sdata`, `_edata`, `_sbss`, `_ebss` defined with `. = ALIGN(4)` are used directly in startup code:
+
+```c
+/* Copy .data from FLASH → SRAM */
+uint32_t *src = &_etext;
+uint32_t *dst = &_sdata;
+while (dst < &_edata) {
+    *dst++ = *src++;    /* 32-bit word copy — only safe if ALIGN(4) */
+}
+
+/* Zero .bss */
+dst = &_sbss;
+while (dst < &_ebss) {
+    *dst++ = 0;         /* 32-bit word write — only safe if ALIGN(4) */
+}
+```
+
+> [!warning]
+> Remove `ALIGN(4)` from around `_sdata`/`_edata` and this word-copy silently corrupts your initialized globals. The bug will look completely unrelated to alignment.
+
+#### Common ALIGN values
+
+| Value        | Use case                                                           |
+| ------------ | ------------------------------------------------------------------ |
+| `ALIGN(4)`   | Standard — 32-bit word alignment for all sections                  |
+| `ALIGN(8)`   | Stack (`_estack`) — AAPCS requires 8-byte alignment at calls       |
+| `ALIGN(512)` | Vector table relocation — `VTOR` register must be 512-byte aligned |
+
 ---
 ## The MEMORY block
 
@@ -337,18 +394,23 @@ SECTIONS
         *(.isr_vector)
         *(.text)
         *(.rodata)
-        end_of_text = .;
+        . = ALIGN(4)
+        _etext = .;
     } > FLASH
 
     .data :
     {
-        start_of_data = 0x20000000;
+        _sdata = .;
         *(.data)
+        . = ALIGN(4);
+        _edata = .;
     } > SRAM AT> FLASH
 
     .bss :
     {
+	    _sbss = .;
         *(.bss)
+        _ebss = .;
     } > SRAM
 }
 ```

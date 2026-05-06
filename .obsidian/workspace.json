@@ -6,6 +6,7 @@
       {
         "id": "0c421d0cd6edce8c",
         "type": "tabs",
+        "dimension": 47.486033519553075,
         "children": [
           {
             "id": "7a84e606f10b0237",
@@ -37,7 +38,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03 OS & Systems/Tools/Git.md",
+                "file": "01 Concepts/Bit Banding.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,7 +53,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Git"
+              "title": "Bit Banding"
             }
           },
           {
@@ -152,12 +153,12 @@
             }
           },
           {
-            "id": "07fc6379392647e1",
+            "id": "c94c718e2aa9c7c7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Externs in C.md",
+                "file": "SBR - Writing main().md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -172,10 +173,139 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Externs in C"
+              "title": "SBR - Writing main()"
+            }
+          },
+          {
+            "id": "437db75c22129ca5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "03 OS & Systems/Tools/OpenOCD - Open On Chip Debugger.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "OpenOCD - Open On Chip Debugger"
+            }
+          },
+          {
+            "id": "c3be9ec85741ce03",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Programming Adapters.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Programming Adapters"
+            }
+          },
+          {
+            "id": "91aa1900ebecae0d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "03 OS & Systems/Tools/Telnet.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Telnet"
             }
           }
-        ]
+        ],
+        "currentTab": 7
+      },
+      {
+        "id": "3607d3c0d0c8c0b5",
+        "type": "tabs",
+        "dimension": 52.513966480446925,
+        "children": [
+          {
+            "id": "467e702ab2a37221",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "03 OS & Systems/Tools/Telnet.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Telnet"
+            }
+          },
+          {
+            "id": "940124f738fe4c73",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "03 OS & Systems/Linux/Linux Commands.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Linux Commands"
+            }
+          }
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -207,7 +337,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "ARM",
+                "query": "tag:#reference",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -309,13 +439,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01 Concepts/Git.md",
+                "file": "03 OS & Systems/Linux/Linux Commands.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Git"
+              "title": "Outline of Linux Commands"
             }
           }
         ],
@@ -338,16 +468,27 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "7a84e606f10b0237",
+  "active": "5054e4a73aa67ac5",
   "lastOpenFiles": [
+    "06 Images/openocd",
+    "ocd.md",
+    "03 OS & Systems/Linux/Linux Commands.md",
+    "03 OS & Systems/Tools/Telnet.md",
+    "03 OS & Systems/Tools/GDB - GNU Debugger.md",
+    "03 OS & Systems/Debian/apt vs apt-get.md",
+    "03 OS & Systems/Tools/OpenOCD - Open On Chip Debugger.md",
+    "06 Images/openocd/overview of using debugger.png",
+    "01 Concepts/Programming Adapters.md",
+    "05 Projects/Self Balancing Robot/SBR - Writing main().md",
+    "01 Concepts/Bit Banding.md",
     "05 Projects/Self Balancing Robot/SBR - Makefile.md",
     "02 Microcontrollers/MCU Linker Scripts.md",
     "01 Concepts/A Guide on Makefiles.md",
-    "Externs in C.md",
     "02 Microcontrollers/MCU Startup File from Scratch.md",
+    "01 Concepts/Externs in C.md",
+    "03 OS & Systems/Tools/Git.md",
     "02 Microcontrollers/Reading 'objdump -h' Output - ELF Section Headers.md",
     "03 OS & Systems/Tools/Neovim.md",
-    "03 OS & Systems/Tools/Git.md",
     "02 Microcontrollers/STM32/STM32F401/Section 5 - Power Controller.md",
     "05 Projects/Self Balancing Robot/SBR - Initial Setup.md",
     "06 Images/MCU/symbol table.png",
@@ -363,20 +504,9 @@
     "06 Images/MCU",
     "06 Images/MPU/Pasted image 20260310210558.png",
     "06 Images/MCU/linker-startup.png",
-    "03 OS & Systems/QNX/QNX-RaspberryPi5-SSH-Guide.md",
-    "05 Projects/Bike Black Box/Black Box Pinout.md",
-    "05 Projects/Self Balancing Robot/Untitled.md",
-    "05 Projects/Medical Infusion Pump/Infusion Pump Pinout.md",
     "06 Images/MCU/makefile-example.png",
-    "02 Microcontrollers/STM32/STM32F401/Section - 8 GPIO.md",
-    "02 Microcontrollers/STM32/STM32F401/Section 6 - Reset & Clock Control (RCC).md",
     "06 Images/STM32-F4/TIM11 input capture.png",
     "06 Images/STM32-F4/TIM5 input capture.png",
-    "03 OS & Systems/QNX/Makefile — QNX Server + Client Build Guide.md",
-    "03 OS & Systems/QNX/Makefile — QNX Dual-Binary Build Guide.md",
-    "01 Concepts/PLL — Phase Lock Loop.md",
-    "06 Images/STM32-F4/HSE-LSE clock sources.png",
-    "01 Concepts/VCO - Voltage Controlled Oscillator.md",
     "Notes Details.base",
     "Images/Untitled",
     "06 Images/VCO",

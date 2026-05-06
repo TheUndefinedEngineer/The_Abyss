@@ -114,6 +114,15 @@ uint32_t val = *BITBAND_SRAM(&myVar, 3);  // Read bit 3
 
 > `<< 5` is the same as `× 32`, and `<< 2` is the same as `× 4` — just written as bit shifts for efficiency.
 
+Example:
+```c
+// Correct way to point to RCC_AHB1ENR
+volatile uint32_t *RCC_AHB1ENR = (volatile uint32_t *) 0x40023830;
+
+// Then enable GPIOA clock (bit 0)
+*RCC_AHB1ENR |= (1 << 0);
+```
+
 ---
 ## Key Properties
 

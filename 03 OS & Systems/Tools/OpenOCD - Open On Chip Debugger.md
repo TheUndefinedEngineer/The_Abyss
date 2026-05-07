@@ -14,9 +14,10 @@
 ![[overview of using debugger.png]]
 
 ## Steps to download the code using OpenOCD
-1. Download and install `OpenOCD`. 
+
+1. Download and install `OpenOCD`: 
 ```bash
-sudo apt install openocd #I don't recommend
+sudo apt install openocd #I don't recommend, scripts will be missing
 
 #Instead
 git clone https://github.com/openocd-org/openocd.git #clone repo
@@ -33,11 +34,40 @@ sudo apt install usbtool libjim-dev libtool libusb-1.0-0 libusb-1.0-0-dev libjay
 make
 sudo make install
 ```
-2. Install `Telnet` client(for windows `PuTTY` software can be used) - [[]]
+
+2. Install `Telnet` client(for windows `PuTTY` software can be used) - [[Linux Commands#telnet]]
 	- If `Telnet` application can't be used, `GDB` can be used instead. - [[GDB - GNU Debugger]]
-3. Run `OpenOCD` with board configuration file.
+
+3. Run `OpenOCD` with board configuration file. - [[STM32F401 - OpenOCD Configuration]]
+
 4. Connect to the `OpenOCD` via `Telnet` client or `GDB` client.
-5. Issue commands over `Telnet` or `GDB` client to `OpenOCD` to download and debug code.
+```bash
+# Connecting using GDB
+arm-none-eabi-gdb
+(gdb) target remote localhost:3333 # couldn't find 
+(gdb) monitor reset init #'monitor' command is always required in gdb.
+
+# Connecting using telnet
+telnet localhost 4444
+> reset init
+```
+> [!important] Use `reset init` when: 
+> - The chip is in an unknown state, 
+> - You just flashed new firmware and want a clean start
+> - You're starting a fresh debug session
+
+
+5. Issue commands over `Telnet` or `GDB` client to `OpenOCD` to download and debug code. [[GDB - GNU Debugger]] & [[Linux Commands#telnet]]
+```bash
+# GDB
+(gdb) monitor <command1> <command2>
+
+# telnet
+> <command1> <command2>
+```
+> [!important] They send openOCD commands - [[OpenOCD - General Commands]]
+
+
 
 
 ---

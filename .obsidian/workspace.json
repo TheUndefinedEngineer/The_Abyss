@@ -6,7 +6,7 @@
       {
         "id": "0c421d0cd6edce8c",
         "type": "tabs",
-        "dimension": 47.486033519553075,
+        "dimension": 27.932960893854748,
         "children": [
           {
             "id": "7a84e606f10b0237",
@@ -199,54 +199,6 @@
               "icon": "lucide-file",
               "title": "OpenOCD - Open On Chip Debugger"
             }
-          },
-          {
-            "id": "c3be9ec85741ce03",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Programming Adapters.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Programming Adapters"
-            }
-          },
-          {
-            "id": "91aa1900ebecae0d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "03 OS & Systems/Tools/Telnet.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Telnet"
-            }
           }
         ],
         "currentTab": 7
@@ -254,34 +206,10 @@
       {
         "id": "3607d3c0d0c8c0b5",
         "type": "tabs",
-        "dimension": 52.513966480446925,
+        "dimension": 72.06703910614524,
         "children": [
           {
             "id": "467e702ab2a37221",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "03 OS & Systems/Tools/Telnet.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Telnet"
-            }
-          },
-          {
-            "id": "940124f738fe4c73",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -303,9 +231,80 @@
               "icon": "lucide-file",
               "title": "Linux Commands"
             }
+          },
+          {
+            "id": "111ae789f23e36eb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "OpenOCD - General Commands.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "OpenOCD - General Commands"
+            }
+          },
+          {
+            "id": "04b26276be08d0c9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "03 OS & Systems/Tools/GDB - GNU Debugger.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "GDB - GNU Debugger"
+            }
+          },
+          {
+            "id": "d88601c0e730b4ac",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "STM32F401 - OpenOCD Configuration.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "STM32F401 - OpenOCD Configuration"
+            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -468,16 +467,36 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "5054e4a73aa67ac5",
+  "active": "467e702ab2a37221",
   "lastOpenFiles": [
-    "06 Images/openocd",
-    "ocd.md",
+    "OpenOCD - General Commands.md",
+    "03 OS & Systems/Tools/GDB - GNU Debugger.md",
+    "STM32F401 - OpenOCD Configuration.md",
+    "03 OS & Systems/Tools/OpenOCD - Open On Chip Debugger.md",
+    "Linux Tutorial - GNU GDB Debugger Command Cheat Sheet_files/avatar92(1).jpg",
+    "Linux Tutorial - GNU GDB Debugger Command Cheat Sheet_files/book40.gif",
+    "Linux Tutorial - GNU GDB Debugger Command Cheat Sheet_files/GDB-ddd.png",
+    "Linux Tutorial - GNU GDB Debugger Command Cheat Sheet_files/GDB-tui.png",
+    "Linux Tutorial - GNU GDB Debugger Command Cheat Sheet_files/TradePubMagazines.gif",
+    "Linux Tutorial - GNU GDB Debugger Command Cheat Sheet_files/YoLinux_Tutorial_logo.png",
+    "Linux Tutorial - GNU GDB Debugger Command Cheat Sheet_files/Amazon-BuyABook88x31.gif",
+    "Linux Tutorial - GNU GDB Debugger Command Cheat Sheet_files/avatar92.jpg",
+    "Linux Tutorial - GNU GDB Debugger Command Cheat Sheet_files/1882114884.01.MZZZZZZZ.jpg",
+    "Linux Tutorial - GNU GDB Debugger Command Cheat Sheet_files/0735710430.01.MZZZZZZZ.jpg",
+    "Linux Tutorial - GNU GDB Debugger Command Cheat Sheet_files/saved_resource.html",
+    "Linux Tutorial - GNU GDB Debugger Command Cheat Sheet_files/get.media",
+    "Linux Tutorial - GNU GDB Debugger Command Cheat Sheet_files/common.bundle.6e91eff224ce9a26bce47c558a00a199.js",
+    "Linux Tutorial - GNU GDB Debugger Command Cheat Sheet_files/saved_resource(5).html",
+    "Linux Tutorial - GNU GDB Debugger Command Cheat Sheet_files/recommendations.load.b70db46cc022568f99762dc7a6179c7c.js",
+    "Linux Tutorial - GNU GDB Debugger Command Cheat Sheet_files/saved_resource(4).html",
+    "Linux Tutorial - GNU GDB Debugger Command Cheat Sheet_files/pixel.html",
+    "Linux Tutorial - GNU GDB Debugger Command Cheat Sheet_files/iframe728x90px-ValueClick.html",
+    "Linux Tutorial - GNU GDB Debugger Command Cheat Sheet_files/iframe.html",
+    "Linux Tutorial - GNU GDB Debugger Command Cheat Sheet_files/saved_resource(3).html",
     "03 OS & Systems/Linux/Linux Commands.md",
     "03 OS & Systems/Tools/Telnet.md",
-    "03 OS & Systems/Tools/GDB - GNU Debugger.md",
+    "ocd.md",
     "03 OS & Systems/Debian/apt vs apt-get.md",
-    "03 OS & Systems/Tools/OpenOCD - Open On Chip Debugger.md",
-    "06 Images/openocd/overview of using debugger.png",
     "01 Concepts/Programming Adapters.md",
     "05 Projects/Self Balancing Robot/SBR - Writing main().md",
     "01 Concepts/Bit Banding.md",
@@ -491,31 +510,11 @@
     "03 OS & Systems/Tools/Neovim.md",
     "02 Microcontrollers/STM32/STM32F401/Section 5 - Power Controller.md",
     "05 Projects/Self Balancing Robot/SBR - Initial Setup.md",
-    "06 Images/MCU/symbol table.png",
-    "06 Images/MCU/relocating (.)data.png",
     "03 OS & Systems/QNX/Quick Start Target Image for Raspberry Pi.md",
-    "06 Images/MCU/storage of final executable in code memory.png",
-    "06 Images/MCU/vector table placement.png",
     "05 Projects/Self Balancing Robot/Self Balancing Robot.md",
     "00 Inbox/Shell Basics.md",
     "00 Inbox/Writing Code.md",
     "07 Templates/Note tempates/Templater.md",
-    "README.md",
-    "06 Images/MCU",
-    "06 Images/MPU/Pasted image 20260310210558.png",
-    "06 Images/MCU/linker-startup.png",
-    "06 Images/MCU/makefile-example.png",
-    "06 Images/STM32-F4/TIM11 input capture.png",
-    "06 Images/STM32-F4/TIM5 input capture.png",
-    "Notes Details.base",
-    "Images/Untitled",
-    "06 Images/VCO",
-    "Untitled.base",
-    "06 Images/varactor diode",
-    "06 Images/Schmitt Trigger",
-    "06 Images/PLL",
-    "06 Images/rpi",
-    "05 Projects/Medical Infusion Pump",
     "Untitled.canvas"
   ]
 }

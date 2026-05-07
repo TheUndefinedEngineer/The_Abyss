@@ -8,10 +8,10 @@
   "collapse-color-groups": false,
   "colorGroups": [
     {
-      "query": "file:Engineering Dashboard",
+      "query": "file:README",
       "color": {
         "a": 1,
-        "rgb": 15257423
+        "rgb": 4952556
       }
     },
     {
@@ -22,37 +22,23 @@
       }
     },
     {
-      "query": "tag:#guide  ",
-      "color": {
-        "a": 1,
-        "rgb": 11657298
-      }
-    },
-    {
       "query": "tag:#project  ",
       "color": {
         "a": 1,
         "rgb": 15741804
       }
-    },
-    {
-      "query": "tag:#concept  ",
-      "color": {
-        "a": 1,
-        "rgb": 5431473
-      }
     }
   ],
   "collapse-display": false,
   "showArrow": false,
-  "textFadeMultiplier": -0.4,
-  "nodeSizeMultiplier": 1.10807291666667,
-  "lineSizeMultiplier": 2.798828125,
+  "textFadeMultiplier": -0.1,
+  "nodeSizeMultiplier": 0.963321940104167,
+  "lineSizeMultiplier": 1.39837239583333,
   "collapse-forces": false,
-  "centerStrength": 0.303792317708333,
-  "repelStrength": 9.06575520833333,
-  "linkStrength": 0.948404947916667,
-  "linkDistance": 250,
-  "scale": 0.32044951053732246,
-  "close": true
+  "centerStrength": 0.248372395833333,
+  "repelStrength": 7.20540364583333,
+  "linkStrength": 0.738932291666667,
+  "linkDistance": 296,
+  "scale": 0.13719199163467663,
+  "close": false
 }

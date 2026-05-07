@@ -1,5 +1,6 @@
 *06-05-2026* 
 
+---
 ## info
 1. `info` is a documentation system and viewer developed by the GNU Project, primarily used for reading manuals written in the Texinfo format.
    
@@ -30,8 +31,43 @@ info openocd
     - `i`: Search the document's index.
     - `q`: Quit the Info reader.
 ---
+## telnet
+
+1. It is a command line tool used to connect to remote systems using the `Telnet` protocol. It allows us to connect to remote systems over internet and perform various tasks, such as sending email, transferring files, and running remote commands.
+
+2. Installation:
+```bash
+#debian
+sudo apt install telnet
+```
+
+3. Usage:
+```bash
+telnet [OPTION...] [HOST [PORT]]
+
+#example
+telnet localhost 4444
+telnet google.com 80
+```
+
+4. Troubleshooting:
+```bash
+# 1 
+> telnet google.com 1443  
+> Trying 2404:6800:4009:809::200e...
+# If its only showing connecting then most probably the port number is wrong for that region.
+
+# 2
+> telnet --help
+# Use --help flag to get more information on options.
+```
+
+5. Used in - [[OpenOCD - Open On Chip Debugger]]
+
+
+---
 ## !
 Sources:
-1. 
+1. [Understanding Telnet](https://youtu.be/WavoR9-wvn0?si=OAmziEl4v6xCDEOl)
 
 Tags: #reference #linux 

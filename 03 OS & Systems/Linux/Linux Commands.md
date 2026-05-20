@@ -1,4 +1,129 @@
 *06-05-2026* 
+```table-of-contents
+title: 
+style: nestedList # TOC style (nestedList|nestedOrderedList|inlineFirstLevel)
+minLevel: 0 # Include headings from the specified level
+maxLevel: 0 # Include headings up to the specified level
+include: 
+exclude: 
+includeLinks: true # Make headings clickable
+hideWhenEmpty: false # Hide TOC if no headings are found
+debugInConsole: false # Print debug info in Obsidian console
+```
+
+---
+## Overviw
+
+| Command   | Full Form                       | What it does                                                                            |
+| --------- | ------------------------------- | --------------------------------------------------------------------------------------- |
+| `pwd`     | print working directory         | prints the current working directory                                                    |
+| `ls`      | list                            | prints list of files                                                                    |
+| `touch`   | -                               | creates a file                                                                          |
+| `rm`      | remove                          | delete files, directories, and symbolic links                                           |
+| `clear`   | -                               | clears the terminal                                                                     |
+| `cd`      | change directroy                | switch the current working directory to a specified path                                |
+| `mv`      | move                            | **move** files and directories from one location to another or to **rename** them       |
+| `cat`     | concatenate                     | outputs file contents in terminal                                                       |
+| `grep`    | Global Regular Expression Print | scans input (files or streams) and prints all lines that match a specified text pattern |
+| `echo`    | -                               | display text strings or variable values to the standard output                          |
+| `less`    | -                               | pager used to view the contents of text files or command output one screen at a time    |
+| `man`     | manual                          | provides access to the system's reference manual pages                                  |
+| `history` |                                 |                                                                                         |
+| `help`    |                                 |                                                                                         |
+| `which`   |                                 |                                                                                         |
+| `type`    |                                 |                                                                                         |
+| `compgen` |                                 |                                                                                         |
+| `file`    |                                 |                                                                                         |
+| `tr`      |                                 |                                                                                         |
+| `whoami`  |                                 |                                                                                         |
+| `unset`   |                                 |                                                                                         |
+| `uname`   |                                 |                                                                                         |
+| `chmod`   |                                 |                                                                                         |
+| `cp`      |                                 |                                                                                         |
+
+| Flags      | Full form        | Meaning                                  |
+| ---------- | ---------------- | ---------------------------------------- |
+| `<cmd> -i` | interactive flag | gives more information and conformation. |
+
+| Variables   |     |
+| ----------- | --- |
+| `$PATH`     |     |
+| `$PWD`      |     |
+| `$USER`     |     |
+| `$SHELL`    |     |
+| `$MACHTYPE` |     |
+| `$HOSTNAME` |     |
+- lsd
+- bat
+
+
+---
+## ls
+The list command prints list of files.
+
+Usage:
+```bash
+ls
+ls -a
+ls -l
+```
+
+| Options | Full form        | What they do                                           |
+| ------- | ---------------- | ------------------------------------------------------ |
+| `ls -a` | list all         | all files, even the hidden ones                        |
+| `ls -l` | long list format | shows detailed information about files and directories |
+
+---
+## grep
+This command scans input (files or streams) and prints all lines that match a specified text pattern.
+
+It is derived from the **g/re/p** command found in the Unix text editor **ed**, which stands for:
+- **g**: globally
+- **re**: regular expression
+- **p**: print
+
+Usage:
+```bash
+grep [options] pattern [file...]
+
+grep -r "pattern" /path/to/directory
+grep -i "pattern" file
+grep -n "pattern" file
+grep -v "pattern" file
+grep -c "pattern" file
+grep -w "pattern" file
+grep -E "pattern" file
+grep -[A/B/C]<no.of lines> "pattern" file
+```
+
+
+| Options | Full form                   | What they do                                                   |
+| ------- | --------------------------- | -------------------------------------------------------------- |
+| `-r`    | Recursive search            | search through all files in a directory and its subdirectories |
+| `-i`    | Case-Insensitive            | ignore uppercase/lowercase distinctions                        |
+| `-n`    | Line number                 | prefix matching lines with their line numbers                  |
+| `-v`    | Invert Match                | display lines that do _not_ contain the pattern                |
+| `-w`    | Whole word                  | match only whole words                                         |
+| `-c`    | Count Matches               | output the number of matching lines                            |
+| `-E`    | Extended Regular Expression | utilize extended regex features like `+`, `?`, and `\|`        |
+| `-A`    | after                       | Shows line after the matching line                             |
+| `-B`    | before                      | Shows line before the matching line                            |
+| `-C`    | contex                      | Shows lines both _before and after_ the match                  |
+| `-o`    | only-matching               | outputs only the matching parts of a line                      |
+> [!important] For complex pattern matching,
+> `grep` supports regular expressions such as **`^pattern`** (start of line), **`pattern$`** (end of line), and **`.`** (any single character).
+
+
+---
+## echo
+It is a built-in shell command used to display **text strings** or **variable values** to the standard output.
+
+Usage:
+```bash
+echo [option] [string]
+
+```
+
 
 ---
 ## info
@@ -30,6 +155,7 @@ info openocd
     - `s`: Search for text within the current document.
     - `i`: Search the document's index.
     - `q`: Quit the Info reader.
+
 ---
 ## telnet
 
@@ -66,8 +192,9 @@ telnet google.com 80
 
 
 ---
-## !
+## Metadata
 Sources:
 1. [Understanding Telnet](https://youtu.be/WavoR9-wvn0?si=OAmziEl4v6xCDEOl)
+2. [Basic Commands - Youtube](https://www.youtube.com/watch?v=Sx9zG7wa4FA)
 
 Tags: #reference #linux 

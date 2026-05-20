@@ -6,7 +6,7 @@
       {
         "id": "0c421d0cd6edce8c",
         "type": "tabs",
-        "dimension": 27.932960893854748,
+        "dimension": 28.328611898016998,
         "children": [
           {
             "id": "7a84e606f10b0237",
@@ -206,7 +206,7 @@
       {
         "id": "3607d3c0d0c8c0b5",
         "type": "tabs",
-        "dimension": 72.06703910614524,
+        "dimension": 71.671388101983,
         "children": [
           {
             "id": "467e702ab2a37221",
@@ -303,8 +303,33 @@
               "icon": "lucide-file",
               "title": "STM32F401 - OpenOCD Configuration"
             }
+          },
+          {
+            "id": "59996021cc64386e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "03 OS & Systems/Books & Courses/Bash Scripting/Bash Scripting.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Bash Scripting"
+            }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -361,7 +386,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "0bd1568cd5380cd9",
@@ -467,12 +493,24 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "467e702ab2a37221",
+  "active": "59996021cc64386e",
   "lastOpenFiles": [
+    "03 OS & Systems/Linux/Linux Commands.md",
+    "05 Projects/Self Balancing Robot/Self Balancing Robot.md",
+    "05 Projects/Self Balancing Robot/SBR - Writing main().md",
+    "05 Projects/Self Balancing Robot/SBR - Makefile.md",
+    "05 Projects/Self Balancing Robot/SBR - Initial Setup.md",
+    "03 OS & Systems/Books & Courses/Bash Scripting/Bash Scripting.md",
+    "07 Templates/Note tempates/Templater.md",
+    "01 Concepts/UART.md",
+    "03 OS & Systems/Books & Courses/Bash Scripting",
+    "03 OS & Systems/Tools/OpenOCD - Open On Chip Debugger.md",
+    "03 OS & Systems/General/UTF-8-locale-General.md",
+    "03 OS & Systems/Linux/GRUB Dual Boot Fix.md",
+    "01 Concepts/SPI.md",
     "OpenOCD - General Commands.md",
     "03 OS & Systems/Tools/GDB - GNU Debugger.md",
     "STM32F401 - OpenOCD Configuration.md",
-    "03 OS & Systems/Tools/OpenOCD - Open On Chip Debugger.md",
     "Linux Tutorial - GNU GDB Debugger Command Cheat Sheet_files/avatar92(1).jpg",
     "Linux Tutorial - GNU GDB Debugger Command Cheat Sheet_files/book40.gif",
     "Linux Tutorial - GNU GDB Debugger Command Cheat Sheet_files/GDB-ddd.png",
@@ -492,29 +530,17 @@
     "Linux Tutorial - GNU GDB Debugger Command Cheat Sheet_files/pixel.html",
     "Linux Tutorial - GNU GDB Debugger Command Cheat Sheet_files/iframe728x90px-ValueClick.html",
     "Linux Tutorial - GNU GDB Debugger Command Cheat Sheet_files/iframe.html",
-    "Linux Tutorial - GNU GDB Debugger Command Cheat Sheet_files/saved_resource(3).html",
-    "03 OS & Systems/Linux/Linux Commands.md",
     "03 OS & Systems/Tools/Telnet.md",
     "ocd.md",
     "03 OS & Systems/Debian/apt vs apt-get.md",
     "01 Concepts/Programming Adapters.md",
-    "05 Projects/Self Balancing Robot/SBR - Writing main().md",
     "01 Concepts/Bit Banding.md",
-    "05 Projects/Self Balancing Robot/SBR - Makefile.md",
     "02 Microcontrollers/MCU Linker Scripts.md",
     "01 Concepts/A Guide on Makefiles.md",
     "02 Microcontrollers/MCU Startup File from Scratch.md",
     "01 Concepts/Externs in C.md",
     "03 OS & Systems/Tools/Git.md",
     "02 Microcontrollers/Reading 'objdump -h' Output - ELF Section Headers.md",
-    "03 OS & Systems/Tools/Neovim.md",
-    "02 Microcontrollers/STM32/STM32F401/Section 5 - Power Controller.md",
-    "05 Projects/Self Balancing Robot/SBR - Initial Setup.md",
-    "03 OS & Systems/QNX/Quick Start Target Image for Raspberry Pi.md",
-    "05 Projects/Self Balancing Robot/Self Balancing Robot.md",
-    "00 Inbox/Shell Basics.md",
-    "00 Inbox/Writing Code.md",
-    "07 Templates/Note tempates/Templater.md",
     "Untitled.canvas"
   ]
 }

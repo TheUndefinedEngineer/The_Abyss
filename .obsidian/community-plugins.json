@@ -1,5 +1,6 @@
 [
   "obsidian-linter",
   "templater-obsidian",
-  "dataview"
+  "dataview",
+  "automatic-table-of-contents"
 ]

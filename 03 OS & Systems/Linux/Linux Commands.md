@@ -40,6 +40,7 @@ debugInConsole: false # Print debug info in Obsidian console
 | `uname`   |                                 |                                                                                         |
 | `chmod`   |                                 |                                                                                         |
 | `cp`      |                                 |                                                                                         |
+| `yes`     |                                 |                                                                                         |
 
 | Flags      | Full form        | Meaning                                  |
 | ---------- | ---------------- | ---------------------------------------- |

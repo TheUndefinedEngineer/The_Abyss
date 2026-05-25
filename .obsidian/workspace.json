@@ -38,7 +38,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03 OS & Systems/Tools/Neovim.md",
+                "file": "03 OS & Systems/Linux/Linux Commands.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -53,7 +53,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Neovim"
+              "title": "Linux Commands"
             }
           },
           {
@@ -105,7 +105,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       },
       {
         "id": "3607d3c0d0c8c0b5",
@@ -233,7 +233,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -265,7 +265,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#reference",
+                "query": "gdb",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -286,7 +286,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -396,12 +397,17 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "9e8a1a65284e0654",
+  "active": "a303cab8471ec86e",
   "lastOpenFiles": [
-    "[[SBR.md",
-    "05 Projects/Self Balancing Robot/Self Balancing Robot.md",
-    "SBR.md",
+    "01 Concepts/Bit Banding.md",
+    "03 OS & Systems/Linux/Linux Commands.md",
+    "03 OS & Systems/Tools/GDB - GNU Debugger.md",
     "03 OS & Systems/Tools/Neovim.md",
+    "05 Projects/Self Balancing Robot/Self Balancing Robot.md",
+    "05 Projects/Self Balancing Robot/SBR - Makefile.md",
+    "03 OS & Systems/Books & Courses/Bash Scripting/Bash Scripting.md",
+    "[[SBR.md",
+    "SBR.md",
     "[[Neovim]].md",
     "SBR - Pin Configuration.md",
     "Notes Details.base",
@@ -409,12 +415,8 @@
     "STM32F401 - OpenOCD Configuration.md",
     "Untitled.md",
     "README.md",
-    "01 Concepts/Bit Banding.md",
     "02 Microcontrollers/MCU Startup File from Scratch.md",
-    "03 OS & Systems/Books & Courses/Bash Scripting/Bash Scripting.md",
-    "03 OS & Systems/Linux/Linux Commands.md",
     "05 Projects/Self Balancing Robot/SBR - Writing main().md",
-    "05 Projects/Self Balancing Robot/SBR - Makefile.md",
     "05 Projects/Self Balancing Robot/SBR - Initial Setup.md",
     "01 Concepts/UART.md",
     "03 OS & Systems/Books & Courses/Bash Scripting",
@@ -423,7 +425,6 @@
     "03 OS & Systems/Linux/GRUB Dual Boot Fix.md",
     "01 Concepts/SPI.md",
     "OpenOCD - General Commands.md",
-    "03 OS & Systems/Tools/GDB - GNU Debugger.md",
     "Linux Tutorial - GNU GDB Debugger Command Cheat Sheet_files/avatar92(1).jpg",
     "Linux Tutorial - GNU GDB Debugger Command Cheat Sheet_files/book40.gif",
     "Linux Tutorial - GNU GDB Debugger Command Cheat Sheet_files/GDB-ddd.png",

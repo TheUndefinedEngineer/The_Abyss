@@ -6,7 +6,7 @@
       {
         "id": "0c421d0cd6edce8c",
         "type": "tabs",
-        "dimension": 71.09826589595376,
+        "dimension": 77.57847533632287,
         "children": [
           {
             "id": "d37374b638f88c9c",
@@ -14,7 +14,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01 Concepts/Bit Banding.md",
+                "file": "05 Projects/Self Balancing Robot/SBR - Initial Setup.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -29,7 +29,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Bit Banding"
+              "title": "SBR - Initial Setup"
             }
           },
           {
@@ -38,7 +38,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03 OS & Systems/Linux/Linux Commands.md",
+                "file": "05 Projects/Self Balancing Robot/SBR - Writing Code.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -53,7 +53,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Linux Commands"
+              "title": "SBR - Writing Code"
             }
           },
           {
@@ -103,14 +103,24 @@
               "icon": "lucide-file",
               "title": "Self Balancing Robot"
             }
+          },
+          {
+            "id": "de70a6221305711d",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 4
       },
       {
         "id": "3607d3c0d0c8c0b5",
         "type": "tabs",
-        "dimension": 28.901734104046245,
+        "dimension": 22.421524663677133,
         "children": [
           {
             "id": "467e702ab2a37221",
@@ -137,78 +147,6 @@
             }
           },
           {
-            "id": "111ae789f23e36eb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "OpenOCD - General Commands.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "OpenOCD - General Commands"
-            }
-          },
-          {
-            "id": "04b26276be08d0c9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "03 OS & Systems/Tools/GDB - GNU Debugger.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "GDB - GNU Debugger"
-            }
-          },
-          {
-            "id": "d88601c0e730b4ac",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "STM32F401 - OpenOCD Configuration.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "STM32F401 - OpenOCD Configuration"
-            }
-          },
-          {
             "id": "59996021cc64386e",
             "type": "leaf",
             "state": {
@@ -232,8 +170,7 @@
               "title": "Bash Scripting"
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "vertical"
@@ -265,7 +202,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "gdb",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -286,8 +223,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -397,34 +333,35 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "a303cab8471ec86e",
+  "active": "5054e4a73aa67ac5",
   "lastOpenFiles": [
-    "01 Concepts/Bit Banding.md",
-    "03 OS & Systems/Linux/Linux Commands.md",
-    "03 OS & Systems/Tools/GDB - GNU Debugger.md",
-    "03 OS & Systems/Tools/Neovim.md",
+    "05 Projects/Self Balancing Robot/SBR - Writing Code.md",
     "05 Projects/Self Balancing Robot/Self Balancing Robot.md",
     "05 Projects/Self Balancing Robot/SBR - Makefile.md",
+    "[[OpenOCD.md",
+    "05 Projects/Self Balancing Robot/SBR - Initial Setup.md",
+    "01 Concepts/Bit Banding.md",
+    "03 OS & Systems/Linux/Linux Commands.md",
     "03 OS & Systems/Books & Courses/Bash Scripting/Bash Scripting.md",
+    "OpenOCD - General Commands.md",
+    "03 OS & Systems/Tools/GDB - GNU Debugger.md",
+    "STM32F401 - OpenOCD Configuration.md",
+    "03 OS & Systems/Tools/Neovim.md",
     "[[SBR.md",
     "SBR.md",
     "[[Neovim]].md",
     "SBR - Pin Configuration.md",
     "Notes Details.base",
     "07 Templates/Note tempates/Templater.md",
-    "STM32F401 - OpenOCD Configuration.md",
     "Untitled.md",
     "README.md",
     "02 Microcontrollers/MCU Startup File from Scratch.md",
-    "05 Projects/Self Balancing Robot/SBR - Writing main().md",
-    "05 Projects/Self Balancing Robot/SBR - Initial Setup.md",
     "01 Concepts/UART.md",
     "03 OS & Systems/Books & Courses/Bash Scripting",
     "03 OS & Systems/Tools/OpenOCD - Open On Chip Debugger.md",
     "03 OS & Systems/General/UTF-8-locale-General.md",
     "03 OS & Systems/Linux/GRUB Dual Boot Fix.md",
     "01 Concepts/SPI.md",
-    "OpenOCD - General Commands.md",
     "Linux Tutorial - GNU GDB Debugger Command Cheat Sheet_files/avatar92(1).jpg",
     "Linux Tutorial - GNU GDB Debugger Command Cheat Sheet_files/book40.gif",
     "Linux Tutorial - GNU GDB Debugger Command Cheat Sheet_files/GDB-ddd.png",
@@ -444,7 +381,6 @@
     "Linux Tutorial - GNU GDB Debugger Command Cheat Sheet_files/pixel.html",
     "Linux Tutorial - GNU GDB Debugger Command Cheat Sheet_files/iframe728x90px-ValueClick.html",
     "03 OS & Systems/Tools/Telnet.md",
-    "ocd.md",
     "Untitled.canvas"
   ]
 }

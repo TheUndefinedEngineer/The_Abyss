@@ -126,6 +126,11 @@ echo [option] [string]
 ```
 
 
+| Flags | What it does |
+| ----- | ------------ |
+| `-n`  |              |
+
+
 ---
 ## info
 1. `info` is a documentation system and viewer developed by the GNU Project, primarily used for reading manuals written in the Texinfo format.

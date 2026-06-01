@@ -88,7 +88,7 @@ Version 3 is a redo of the whole hardware setup,the previous versions used hand-
 - OpenOCD - [[STM32F401 - OpenOCD Configuration]]
 - GBD & Telnet - [[GDB - GNU Debugger]], [[Linux Commands#telnet]]
 - [[SBR - Initial Setup]]
-- [[SBR - Writing main()]]
+- [[SBR - Writing Code]]
 ---
 ## Current Progress
 

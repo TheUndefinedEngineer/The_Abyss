@@ -1,4 +1,17 @@
 *19-04-2026* 
+```table-of-contents
+title: 
+style: nestedList # TOC style (nestedList|nestedOrderedList|inlineFirstLevel)
+minLevel: 0 # Include headings from the specified level
+maxLevel: 0 # Include headings up to the specified level
+include: 
+exclude: 
+includeLinks: true # Make headings clickable
+hideWhenEmpty: false # Hide TOC if no headings are found
+debugInConsole: false # Print debug info in Obsidian console
+```
+---
+## Init Process
 
 Tools I am installing:
 - `arm-none-eabi-gcc` — the ARM cross-compiler
@@ -22,8 +35,8 @@ Before writing any peripheral code, I need to write:
 
 - STM32F401xx has total = 16 (system) + 82 (external) = 98 exceptions.
 ---
-## !
+## Metadata
 Sources:
 1. [https://gcc.gnu.org/onlinedocs/gcc/ARM-Options.html](https://gcc.gnu.org/onlinedocs/)
 
-Tags: #project 
+Tags: #project #guide 

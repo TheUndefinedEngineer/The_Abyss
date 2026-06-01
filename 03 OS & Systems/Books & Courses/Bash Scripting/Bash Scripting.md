@@ -34,6 +34,9 @@ echo $?
 | `true`                |     |
 | `false`               |     |
 | `[[ .... ]]`          |     |
+| `help test`           |     |
+| `:`                   |     |
+| echo hello \| xxd     |     |
 |                       |     |
 
 ---
@@ -109,6 +112,7 @@ Syntax:
 func() {
 	local <variable name>
 	# statement
+	return
 }
 ```
 
@@ -135,9 +139,47 @@ while [[ .... ]]; do
 done
 ```
 
+### Until
 
+Syntax:
+```bash
+until [[ .... ]]; do
+	# statements
+done
+```
 
+---
+## For Loops
 
+Syntax:
+```bash
+for <item> in <item list>: do
+	#statement
+done
+
+# Example of another method
+max=5
+for ((i = 0; i < max; i++)); do
+	echo "The number is $i"
+done 
+```
+
+---
+## Input & Output
+
+### Input
+
+Syntax:
+```bash
+#single
+read -r foo
+echo "you entered $foo"
+
+#multiple
+while read -r line; do
+	echo "read line: $line"
+done
+```
 
 
 ---
